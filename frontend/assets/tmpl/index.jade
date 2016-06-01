@@ -5,26 +5,8 @@ html(lang="ja")
     title laravel.osaka
     script(type='text/javascript')
     link(rel='stylesheet' href='./assets/css/common.css')
+    link(rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css")
     script(src='https://use.fontawesome.com/28928d40e8.js')
   body
-    #cover
-      .info
-        .icon
-          <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-        p 2016.10.下旬
-      .info
-        .icon
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-        p MOTEX 株式会社
-
-      .recruitBtn
-        .innerBox
-          .circle
-          p 登壇者 募集
-          .circle
-      .recruitBtn
-        .innerBox
-          .circle
-          p スポンサー 募集
-          .circle
+    include ./cover.jade
     include ./footer.jade

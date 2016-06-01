@@ -4,8 +4,25 @@
   background-image: url("../../img/bg-pt-footer.png");
   .title {
     color: #8388B8;
+    text-align: center;
   }
   .sns {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .snsLink {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    text-decoration: none;
     color: #EE5954;
   }
+  //.connpass {
+  //  margin-left: 0;
+  //}
+  //.facebook {
+  //  margin-right: 0;
+  //}
 }
