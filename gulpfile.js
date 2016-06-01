@@ -13,17 +13,19 @@ if(process.env.APP_MODE=="build"){
     var dist = "./public/";
 }
 
-var tasks = require("./frontend/libs/gulp/gulp-tasks.js")({src,dist});
+var path = {src,dist}
+
+var tasks = require("./frontend/libs/gulp/gulp-tasks.js")(path);
 
 gulp.task("sass",()=>{
-    tasks.sass().bourbon({src,dist})
+    tasks.sass().bourbon(path)
 });
 gulp.task("watch:sass",()=>{
     gulp.watch(tasks.sass().target,["sass"])
 });
 
 gulp.task("jade",()=>{
-    tasks.jade().build(tasks.jade().build)
+    tasks.jade().build(path,{})
 });
 gulp.task("watch:jade",()=> {
     gulp.watch(tasks.jade().target, ["jade"])
@@ -34,7 +36,9 @@ gulp.task("watch:jade",()=> {
 //    gulp.watch(tasks.webpack().target,["webpack"]);
 //});
 
-gulp.task("server",tasks.browserSync().start);
+gulp.task("server",()=>{
+    tasks.browserSync().start(path)
+});
 
 gulp.task("watch",[
     "watch:sass",
