@@ -1,0 +1,11 @@
+@import "./_mixin.scss";
+
+#footer {
+  background-image: url("../../img/bg-pt-footer.png");
+  .title {
+    color: #8388B8;
+  }
+  .sns {
+    color: #EE5954;
+  }
+}

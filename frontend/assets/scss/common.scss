@@ -1,3 +1,9 @@
-*{
-  color:red
+@import "./_mixin.scss";
+@import "./_cover.scss";
+@import "./_footer.scss";
+
+
+body {
+  background-image: url('../../img/main.jpg');
+  background-size: cover;
 }

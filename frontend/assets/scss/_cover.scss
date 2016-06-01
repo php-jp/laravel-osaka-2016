@@ -1,0 +1,38 @@
+@import "./_mixin.scss";
+
+#cover {
+  background-color: $themaPink;
+  //opacity: 0.8;
+}
+
+#cover .info {
+  .icon {
+    background-color: white;
+    //opacity: 0.8;
+    border-radius: 2em;
+    width: 2em;
+    height: 2em;
+  }
+  i {
+    color: $themaPink;
+  }
+  p {
+    color: white;
+  }
+}
+
+#cover .recruitBtn {
+  background-color: $accentNavy;
+    .innerBox {
+      border: 1px solid white;
+    }
+    .innerBox .circle{
+      background-color: white;
+      width: 1em;
+      height: 1em;
+      border-radius: 1em;
+    }
+    .innerBox p {
+      color: white;
+    }
+}
