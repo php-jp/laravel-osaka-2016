@@ -32,7 +32,7 @@ class Sass{
                 sourceMap: true,
                 includePaths: bourbon.with(neat.includePaths)
             }))
-            .pipe(gulp.dest(`${path.dest}assets/css/`));
+            .pipe(gulp.dest(`${path.dist}assets/css/`));
     }
 
     watch(tasks){

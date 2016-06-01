@@ -18,7 +18,7 @@ class BrowserSync{
 
     start(path){
         php.server({
-            base: `${path.dest}`,
+            base: `${path.dist}`,
         },function(){
             browserSync({
                 proxy: "127.0.0.1:8000",
@@ -28,7 +28,7 @@ class BrowserSync{
         });
 
         gulp.watch([
-            `${path.dest}/**/*`
+            `${path.dist}/**/*`
         ], function(){
             setTimeout(function(){
                 browserSync.reload();

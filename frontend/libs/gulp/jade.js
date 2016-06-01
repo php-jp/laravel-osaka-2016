@@ -32,7 +32,7 @@ class Jade{
             errorHandler: $.notify.onError('<%= error.message %>')
         }))
         .pipe($.jade(options))
-        .pipe(gulp.dest(`${path.dest}/`));
+        .pipe(gulp.dest(`${path.dist}/`));
     }
 
     watch(tasks){
