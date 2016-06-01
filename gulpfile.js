@@ -13,38 +13,40 @@ if(process.env.APP_MODE=="build"){
     var dist = "./public/";
 }
 
-var {sass,jade,webpack,browserSync} =
-    require("./frontend/libs/gulp/gulp-tasks.js")({src,dist});
+var tasks = require("./frontend/libs/gulp/gulp-tasks.js")({src,dist});
 
-
-gulp.task("sass",sass().bourbon);
+gulp.task("sass",()=>{
+    tasks.sass().bourbon({src,dist})
+});
 gulp.task("watch:sass",()=>{
-    gulp.watch(sass().target,["sass"])
+    gulp.watch(tasks.sass().target,["sass"])
 });
 
-gulp.task("jade",jade().build);
+gulp.task("jade",()=>{
+    tasks.jade().build(tasks.jade().build)
+});
 gulp.task("watch:jade",()=> {
-    gulp.watch(jade().target, ["jade"])
+    gulp.watch(tasks.jade().target, ["jade"])
 });
 
-gulp.task("webpack",webpack());
-gulp.task("watch:webpack",()=>{
-    gulp.watch(webpack().target,["webpack"]);
-});
+//gulp.task("webpack",tasks.webpack().build);
+//gulp.task("watch:webpack",()=>{
+//    gulp.watch(tasks.webpack().target,["webpack"]);
+//});
 
-gulp.task("server",browserSync().start);
+gulp.task("server",tasks.browserSync().start);
 
 gulp.task("watch",[
     "watch:sass",
     "watch:jade",
-    "watch:webpack",
+    //"watch:webpack",
 ]);
 
 gulp.task("build",function(cb){
     runSequence([
         "sass",
         "jade",
-        "webpack"
+        //"webpack"
     ],cb);
 });
 

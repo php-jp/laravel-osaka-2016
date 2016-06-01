@@ -7,6 +7,7 @@ class Tasks{
     }
 
     sass(){
+        console.log(this)
         return require("./sass.js")(this.path);
     }
 

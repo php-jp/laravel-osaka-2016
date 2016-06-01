@@ -18,21 +18,21 @@ class Jade{
         ]
     }
 
-    build(options){
+    build(path,options){
         options = Object.assign({},{
             locals:{},
             pretty:true
         },options);
 
         gulp.src([
-            `${this.path.src}assets/tmpl/**/*.jade`,
-            `!${this.path.src}assets/tmpl/**/_*`,
+            `${path.src}assets/tmpl/**/*.jade`,
+            `!${path.src}assets/tmpl/**/_*`,
         ])
         .pipe($.plumber({
             errorHandler: $.notify.onError('<%= error.message %>')
         }))
         .pipe($.jade(options))
-        .pipe(gulp.dest(`${this.path.dest}/`));
+        .pipe(gulp.dest(`${path.dest}/`));
     }
 
     watch(tasks){
