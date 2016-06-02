@@ -1,9 +1,9 @@
 @import "./_mixin.scss";
 
 #cover {
-  margin-right: 28%;
-  margin-left: 28%;
-  width: 44%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
   background-color: $themaPink;
   //opacity: 0.8;
 }
@@ -46,6 +46,8 @@
   }
   p {
     color: white;
+    font-size: $fontSizeBase * 1.4;
+    font-weight: $fontWeightBase;
   }
 }
 
@@ -53,7 +55,7 @@
   .recruitBtn {
     background-color: $accentNavy;
     display: inline-block;
-    width: 13em;
+    width: 15em;
     height: 4.8em;
     padding: 4px;
   }
@@ -66,7 +68,7 @@
   .circleLeft, .circleRight, .message {
     box-sizing: border-box;
     display: inline-block;
-    height: 100%;
+    //height: 100%;
   }
   .circleLeft, .circleRight {
     margin-top: 1.6em;
@@ -78,8 +80,11 @@
   .circleRight {
     float: right;
   }
+  .circleLeft .circle {
+    //padding-left: 2.5%;
+  }
   .circle {
-    position: relative;
+    //position: relative;
     width: 0.5em;
     height: 0.5em;
     border-radius: 0.5em;
@@ -89,6 +94,8 @@
     height: 100%;
     width: 80%;
     p {
+      font-weight: $fontWeightBase;
+      font-size: $fontSizeBase * 1.4;
       color: white;
       text-align: center;
     }
