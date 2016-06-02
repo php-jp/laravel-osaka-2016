@@ -7,3 +7,18 @@ $laravelOsakaColor: #9094bd;
 $fontSizeBase: 14px;
 $fontFamilyBase: 'Noto Sans Japanese', serif;
 $fontWeightBase: 100;
+
+$breakpoint: 800px;
+
+@mixin media {
+  @media screen and (max-width: $breakpoint) {
+    //スマホのときの記述
+    @content;
+  }
+}
+//@media screen and (max-width: 767px) {
+//          /* 767px以下用（タブレット／スマートフォン用）の記述 */
+//}
+//@media screen and (max-width: 479px) {
+//          /* 479px以下用（スマートフォン用）の記述 */
+//}

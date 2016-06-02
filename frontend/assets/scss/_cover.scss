@@ -1,33 +1,49 @@
 @import "./_mixin.scss";
 
 #cover {
+  @include media {
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+  }
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 50px;
   width: 540px;
-  height: 680px;
+  height: 630px;
   //background-color: $themaPink;
   background-color: rgba(251, 97, 92, 0.8)
   //opacity: 0.8;
 }
 
 #cover .logo {
-  width: 60%;
-  margin-top: 12%;
-  margin-left: 20%;
-  margin-bottom: 6%;
-  height: auto;
+  @include media{
+    width: 240px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 60px;
+  //margin-top: 12%;
+  //margin-left: auto;
+  //margin-bottom: auto;
+  //height: auto;
 }
 
 #cover .infoArea {
-  margin-bottom: 2.8em;
   opacity: 0.9;
-  .info {
-    margin-left: 33%;
-    height: 3em;
-  }
+  margin-bottom: 2.8em;
   .icon, p {
     display: inline-block;
+  }
+  .info {
+    padding-left: 20%;
+    width: 300px;
+    margin: 0 auto;
+    height: 3em;
   }
   .icon {
     position: relative;
@@ -61,6 +77,11 @@
 }
 
 #cover .recruitArea {
+  @include media {
+    display: none;
+  }
+  //padding-top: 10px;
+  //padding-bottom: 10px;
   .recruitBtn {
     background-color: $accentNavy;
     display: inline-block;
@@ -68,13 +89,27 @@
     //width: 41%;
     height: 4.6em;
     padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-decoration: none;
+    @include media {
+      display: block;
+    }
   }
   .speakerBtn {
     margin-left: 2.3em;
+    @include media {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .sponsorBtn {
     margin-left: 0.4em;
+    @include media {
+      margin-left: auto;
+      margin-right: auto;
+
+    }
   }
   .innerBox {
     box-sizing: border-box;

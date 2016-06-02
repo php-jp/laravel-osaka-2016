@@ -2,6 +2,7 @@ doctype html
 html(lang="ja")
   head
     meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no")
     title laravel.osaka
     script(type='text/javascript')
     link(rel='stylesheet' href='./assets/css/common.css')
@@ -10,4 +11,15 @@ html(lang="ja")
     script(src='https://use.fontawesome.com/28928d40e8.js')
   body
     include ./cover.jade
+    #sp-recruitArea
+      a.recruitBtn.speakerBtn(href="#")
+        .innerBox
+          .circle.circleLeft
+          p 登壇者 募集
+          .circle.circleRight
+      a.recruitBtn.sponsorBtn(href="#")
+        .innerBox
+          .circle.circleLeft
+          p スポンサー 募集
+          .circle.circleRight
     include ./footer.jade
