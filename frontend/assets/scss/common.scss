@@ -3,12 +3,28 @@
 @import "./_footer.scss";
 //@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
+// 全画面に表示する際にはhtmlから100%に
+html,body{
+  height:100%;
+}
+
 body {
-  height: auto;
-  background-image: url('../../img/main.jpg');
-  background: no-repeat;
-  background-size: cover;
   font-family: $fontFamilyBase;
+  // 背景に色をつけると下のみょんみょんが綺麗
+  background: #FCF5ED;
+}
+
+
+.background{
+  //背景固定したいときはDOMを1つ置いてみる。
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background-image: url('../../img/main.jpg');
+  background-size: cover;
+  z-index: -1;
 }
 
 p {

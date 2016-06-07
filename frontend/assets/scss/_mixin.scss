@@ -5,7 +5,8 @@ $innerBoxColor: #8588A7;
 $laravelOsakaColor: #9094bd;
 
 $fontSizeBase: 14px;
-$fontFamilyBase: 'Noto Sans Japanese', serif;
+// Webフォントが重いので
+$fontFamilyBase: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 $fontWeightBase: 100;
 
 $breakpoint: 800px;

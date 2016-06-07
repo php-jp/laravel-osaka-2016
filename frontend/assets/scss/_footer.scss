@@ -3,41 +3,36 @@
 #footer {
   background-image: url("../../img/bg-pt-footer.png");
   background-size: 5% auto;
-  height: 7em;
+  height: 5em;
+  padding-bottom: 2em;
   @include media {
     background-size: 15% auto;
     margin-top: 50px;
-    height: 4em;
-    font-size: $fontSizeBase * 2;
-    font-weight: $fontWeightBase * 2;
   }
   .title {
     color: $laravelOsakaColor;
     text-align: center;
     padding-top: 0.8em;
-    font-size: $fontSizeBase * 2;
+    font-size: 1.5em;
     font-weight: $fontWeightBase * 2;
     @include media {
-      font-size: $fontSizeBase * 1.5;
       margin-top: 0;
+      font-weight:bold;
     }
   }
   .snsArea {
-    width: 12em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.2em;
+    text-align: center;
     @include media {
       margin-top: 0;
     }
   }
   .snsLink {
-    box-sizing: border-box;
     display: inline-block;
     text-align: center;
-    width: 50%;
-    font-size: $fontSizeBase * 1.3;
-    font-weight: $fontWeightBase * 3;
+    font-size: 1.3em;
     text-decoration: none;
     color: #EE5954;
   }
