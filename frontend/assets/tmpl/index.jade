@@ -6,7 +6,6 @@ html(lang="ja")
     title laravel.osaka
     link(rel="icon" type="image/png" href="./img/favicon.ico")
     script(type='text/javascript')
-    link(rel='stylesheet' href='./assets/css/common.css')
     link(rel='stylesheet' href='./assets/css/index.css')
     link(rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css")
     link(rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
@@ -39,9 +38,9 @@ html(lang="ja")
 
     //laravel.osakaについて
     .l-aboutLaravelOsaka
-      div ◎
-      h2 Laravel Osaka 2016 とは
-      p PHPアプリケーション・フレームワーク「Laravel」をテーマにした
+      .contentHeadingMark--navy
+      h2.contentHeading--navy Laravel Osaka 2016 とは
+      p.laravelOsakaOverview PHPアプリケーション・フレームワーク「Laravel」をテーマにした
         br
         |関西では初めてのイベントです。
         br
@@ -56,69 +55,76 @@ html(lang="ja")
         |という方も是非お気軽にご参加ください!!
 
     //セッション一覧
-    .l-session
-      div ◎
-      h2 セッション一覧
+    .l-sessionIndex
+      .contentHeadingMark--white
+      h2.contentHeading--white セッション一覧
       ul
-        li
-          img(src="http://placehold.it/150x150")
-          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p 株式会社chatbox
-          p 後藤知宏
-        li
-          img(src="http://placehold.it/150x150")
-          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p 株式会社chatbox
-          p 後藤知宏
-        li
-          img(src="http://placehold.it/150x150")
-          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p 株式会社chatbox
-          p 後藤知宏
-        li
-          img(src="http://placehold.it/150x150")
-          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p 株式会社chatbox
-          p 後藤知宏
-        li
-          img(src="http://placehold.it/150x150")
-          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p 株式会社chatbox
-          p 後藤知宏
-      div ◎詳細を見る◎
+        li.session
+          img.session_speakerImg(src="http://placehold.it/150x150")
+          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.session_speakerCompany 株式会社chatbox
+          p.session_speakerName 後藤知宏
+        li.session
+          img.session_speakerImg(src="http://placehold.it/150x150")
+          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.session_speakerCompany 株式会社chatbox
+          p.session_speakerName 後藤知宏
+        li.session
+          img.session_speakerImg(src="http://placehold.it/150x150")
+          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.session_speakerCompany 株式会社chatbox
+          p.session_speakerName 後藤知宏
+        li.session
+          img.session_speakerImg(src="http://placehold.it/150x150")
+          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.session_speakerCompany 株式会社chatbox
+          p.session_speakerName 後藤知宏
+        li.session
+          img.session_speakerImg(src="http://placehold.it/150x150")
+          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.session_speakerCompany 株式会社chatbox
+          p.session_speakerName 後藤知宏
+        li and more...
+      .linkBtn--sessionDetailPage ◎詳細を見る◎
 
     //アクセス
     .l-access
-      div
-        div ◎
-        h2 アクセス
-        p 〒532-0011 大阪市淀川区西中島5-12-12
+      .accessInfoBox
+        .contentHeadingMark--white
+        h2.contentHeading--white アクセス
+        p.accessInfo_address 〒532-0011 大阪市淀川区西中島5-12-12
           br
           |エムオーテックス新大阪ビル
-        h4 <i class="fa fa-subway" aria-hidden="true"></i>
+
+        h4.accessInfo_station <i class="fa fa-subway" aria-hidden="true"></i>
           |JR新大阪駅
-        p 正面口より徒歩約7分
-        h4 <i class="fa fa-subway" aria-hidden="true"></i>
+        p.accessInfo_requiredTime 正面口より徒歩約7分
+
+        h4.accessInfo_station <i class="fa fa-subway" aria-hidden="true"></i>
           |地下鉄御堂筋線新大阪駅
-        p 7番出口より徒歩約5分
-        h4 <i class="fa fa-subway" aria-hidden="true"></i>
+        p.accessInfo_requiredTime 7番出口より徒歩約5分
+
+        h4.accessInfo_station <i class="fa fa-subway" aria-hidden="true"></i>
           |地下鉄御堂筋線西中島南方駅
-        p 1番出口より徒歩約5分
-        div ◎Googlemapで開く◎
+        p.accessInfo_requiredTime 1番出口より徒歩約5分
+
+        .linkBtn--googleMap ◎Googlemapで開く◎
 
     //スポンサー一覧
     .l-sponsor
-      ul
-        li スポンサーロゴ
-        li スポンサーロゴ
-        li スポンサーロゴ
-        li スポンサーロゴ
-        li スポンサーロゴ
-        li スポンサーロゴ
+        .contentHeadingMark--navy
+        h2.contentHeading--navy スポンサー
+        ul
+            li.sponsorLogo スポンサーロゴ
+            li.sponsorLogo スポンサーロゴ
+            li.sponsorLogo スポンサーロゴ
+            li.sponsorLogo スポンサーロゴ
+            li.sponsorLogo スポンサーロゴ
+            li.sponsorLogo スポンサーロゴ
 
     //共通フッター
     .l-footer
-      p Laravel.Osaka
+      p.footer_laravelOsaka Laravel.Osaka
       ul
         li ◎connpass
         li ◎facebook
