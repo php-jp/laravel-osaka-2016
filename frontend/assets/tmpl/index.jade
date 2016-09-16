@@ -7,6 +7,7 @@ html(lang="ja")
     link(rel="icon" type="image/png" href="./img/favicon.ico")
     script(type='text/javascript')
     link(rel='stylesheet' href='./assets/css/common.css')
+    link(rel='stylesheet' href='./assets/css/index.css')
     link(rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css")
     link(rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
     meta(property="og:title", content="laravel.osaka 2016")
@@ -20,19 +21,103 @@ html(lang="ja")
     script(src='https://use.fontawesome.com/28928d40e8.js')
   body
     .background
-    include ./_cover.jade
-    #sp-recruitArea
-      a.recruitBtn.speakerBtn(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2")
-        .innerBox
-          .circle.circleLeft
-          p 登壇者 募集
-          .circle.circleRight
-      a.recruitBtn.sponsorBtn(href="http://goo.gl/forms/QAGiQUlDO26rYp173")
-        .innerBox
-          .circle.circleLeft
-          p スポンサー 募集
-          .circle.circleRight
-    include ./_footer.jade
+    //見出し（あとで修正）
+    .l-cover
+      include ./_cover.jade
+      #sp-recruitArea
+        a.recruitBtn.speakerBtn(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2")
+          .innerBox
+            .circle.circleLeft
+            p 登壇者 募集
+            .circle.circleRight
+        a.recruitBtn.sponsorBtn(href="http://goo.gl/forms/QAGiQUlDO26rYp173")
+          .innerBox
+            .circle.circleLeft
+            p スポンサー 募集
+            .circle.circleRight
+      //include ./_footer.jade
+
+    //laravel.osakaについて
+    .l-aboutLaravelOsaka
+      div ◎
+      h2 Laravel Osaka 2016 とは
+      p PHPアプリケーション・フレームワーク「Laravel」をテーマにした
+        br
+        |関西では初めてのイベントです。
+        br
+        |Laravelを日常の業務でバリバリ使ってる猛者をはじめ、
+        br
+        |これからLaravel/PHPをはじめようとする人にも楽しめる内容盛りだくさん!!
+        br
+        |「Laravelに興味があるけど難しい・・・」
+        br
+        |「フレームワークが初めてなんだけど・・・」
+        br
+        |という方も是非お気軽にご参加ください!!
+
+    //セッション一覧
+    .l-session
+      div ◎
+      h2 セッション一覧
+      ul
+        li
+          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p 株式会社chatbox
+          p 後藤知宏
+        li
+          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p 株式会社chatbox
+          p 後藤知宏
+        li
+          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p 株式会社chatbox
+          p 後藤知宏
+        li
+          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p 株式会社chatbox
+          p 後藤知宏
+        li
+          h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p 株式会社chatbox
+          p 後藤知宏
+      div ◎詳細を見る◎
+
+    //アクセス
+    .l-access
+      div
+        div ◎
+        h2 アクセス
+        p 〒532-0011 大阪市淀川区西中島5-12-12
+          br
+          |エムオーテックス新大阪ビル
+        h4 <i class="fa fa-subway" aria-hidden="true"></i>
+          |JR新大阪駅
+        p 正面口より徒歩約7分
+        h4 <i class="fa fa-subway" aria-hidden="true"></i>
+          |地下鉄御堂筋線新大阪駅
+        p 7番出口より徒歩約5分
+        h4 <i class="fa fa-subway" aria-hidden="true"></i>
+          |地下鉄御堂筋線西中島南方駅
+        p 1番出口より徒歩約5分
+        div ◎Googlemapで開く◎
+
+    //スポンサー一覧
+    .l-sponsor
+      ul
+        li スポンサーロゴ
+        li スポンサーロゴ
+        li スポンサーロゴ
+        li スポンサーロゴ
+        li スポンサーロゴ
+        li スポンサーロゴ
+
+    //共通フッター
+    .l-footer
+      p Laravel.Osaka
+      ul
+        li ◎connpass
+        li ◎facebook
+
     br
     br
     include ./_ga.html
