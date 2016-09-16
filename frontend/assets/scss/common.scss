@@ -1,12 +1,6 @@
-@import "./_mixin.scss";
-@import "./_cover.scss";
-@import "./_footer.scss";
-//@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+/*このファイルはindex.scssにちゃんと書き直したら削除するべし*/
 
-//コーディング用の枠
-div, p, ul, li, a {
-  border: 1px solid lightgrey;
-}
+@import "./_mixin.scss"; // 読み込み必要らしいので残しておく
 
 // 全画面に表示する際にはhtmlから100%に
 html,body{
@@ -18,7 +12,6 @@ body {
   // 背景に色をつけると下のみょんみょんが綺麗
   background: #FCF5ED;
 }
-
 
 .background{
   //背景固定したいときはDOMを1つ置いてみる。

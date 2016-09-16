@@ -1,0 +1,89 @@
+//@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+//@import "./_footer.scss"; //新しいfooterに変えるので不要
+
+@import "./_mixin.scss"; // 色コード、フォントサイズ、メディアクエリ
+@import "./_propertyReset.scss"; // タグのデフォルトプロパティのリセット
+@import "./_adjustLayout.scss"; // 中央揃えなど、レイアウト調整の関数
+@import "./_cover.scss"; // あとで修正が必要なsass（削除するべきかも）
+@import "./common.scss"; // 修正後、削除
+
+/*コーディング用の枠（あとで消す）*/
+div, p, ul, li, a {
+  border: 1px solid lightgrey;
+}
+/*共通部分*/
+.contentHeadingMark--white { //h2の上の◎
+  text-align: center;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 0.9rem;
+  border: 6px solid white;
+}
+.contentHeadingMark--navy { //h2の上の◎
+  color: $accentNavy;
+  text-align: center;
+}
+.contentHeading--white { //コンテンツのタイトル（h2）
+  color: white;
+  text-align: center;
+}
+.contentHeading--navy { //コンテンツのタイトル（h2）
+  color: $accentNavy;
+  text-align: center;
+}
+/*コンテンツ毎*/
+.l-aboutLaravelOsaka {
+  background-image: url("../../img/bg-pt-footer.png");
+  background-size: 3% auto;
+  .laravelOsakaOverview {
+    color: $accentNavy;
+    text-align: center;
+  }
+}
+.l-sessionIndex {
+  background-color: $themaPink--opacity;
+  .session {
+    .session_speakerImg,
+    .session_title,
+    .session_speakerCompany,
+    .session_speakerName {
+      color: white;
+    }
+    .session_speakerImg {
+      border-radius: 75px;
+    }
+  }
+  .linkBtn--sessionDetailPage {
+    @include blockCentered;
+    width: 10rem; //位置を中心にするために仮のwidth指定
+  }
+}
+.l-access {
+  .accessInfoBox {
+    background-color: $themaPink;
+    width: 40VW;
+    .accessInfo_address,
+    .accessInfo_station,
+    .accessInfo_requiredTime {
+      color: white;
+    }
+  }
+  .linkBtn--googleMap {
+    @include blockCentered;
+    width: 10rem; //位置を中心にするために仮のwidth指定
+  }
+}
+.l-sponsor {
+  background-image: url("../../img/bg-pt-footer.png");
+  background-size: 3% auto;
+  .sponsorLogo {
+    background-color: white;
+  }
+}
+.l-footer {
+  background-color: $themaPink;
+  color: white;
+  .footer_laravelOsaka {
+    text-align: center;
+  }
+}
