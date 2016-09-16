@@ -3,6 +3,11 @@
 @import "./_footer.scss";
 //@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
+//コーディング用の枠
+div, p, ul, li, a {
+  border: 1px solid lightgrey;
+}
+
 // 全画面に表示する際にはhtmlから100%に
 html,body{
   height:100%;
@@ -22,7 +27,7 @@ body {
   position: fixed;
   top:0;
   left:0;
-  background-image: url('../../img/main.jpg');
+  //background-image: url('../../img/main.jpg');
   background-size: cover;
   z-index: -1;
 }
