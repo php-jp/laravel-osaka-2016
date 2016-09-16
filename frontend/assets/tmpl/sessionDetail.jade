@@ -7,6 +7,7 @@ html(lang="ja")
         link(rel="icon" type="image/png" href="./img/favicon.ico")
         script(type='text/javascript')
         link(rel='stylesheet' href='./assets/css/common.css')
+        link(rel='stylesheet' href='./assets/css/sessionDetail.css')
         link(rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css")
         link(rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
         meta(property="og:title", content="laravel.osaka 2016")
@@ -19,20 +20,48 @@ html(lang="ja")
         meta(name="twitter:image", content="http://php-jp.github.io/laravel-osaka-2016/img/ogp.jpg")
         script(src='https://use.fontawesome.com/28928d40e8.js')
     body
-        .background
-        include ./_cover.jade
-        #sp-recruitArea
-            a.recruitBtn.speakerBtn(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2")
-                .innerBox
-                    .circle.circleLeft
-                    p 登壇者 募集
-                    .circle.circleRight
-            a.recruitBtn.sponsorBtn(href="http://goo.gl/forms/QAGiQUlDO26rYp173")
-                .innerBox
-                    .circle.circleLeft
-                    p スポンサー 募集
-                    .circle.circleRight
-        include ./_footer.jade
-        br
-        br
-        include ./_ga.html
+    .background
+    //ヘッダー
+    .l-header
+        img(src="http://placehold.it/30x30")
+        h1 Laravel Osaka
+
+    //メインコンテンツエリア
+    .l-pageArea--sessionDetail
+        div ◎
+        h2 セッション一覧
+
+        section.sessionDetail
+            .sessionDetail_titleBox
+                h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+            .sessionDetail_contentBox
+                p 変化の激しいWebの世界で、Webの表現力、可能性は大きく広がり続けています。
+                    |CMSの界隈でもAPI対応やクラウド対応など、新しいWebの流れに対応しようとする動きが見られます。
+                    |記事を管理し、配信するだったCMSから、一歩新しいWebのミライへ。
+                    |アプリ化,SEO,クラウド対応など多様化する顧客要求を予測するヒントとして、
+                    |フロントエンド技術の変遷から見えるミライのWebの姿を考えてみましょう。
+                div
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    |<i class="fa fa-circle" aria-hidden="true"></i>
+                    |<i class="fa fa-circle" aria-hidden="true"></i>
+                .profileBox
+                    .profileBox_imageSns
+                        img(src="http://placehold.it/150x150")
+                        ul
+                            li <i class="fa fa-twitter" aria-hidden="true"></i>
+                            li <i class="fa fa-facebook" aria-hidden="true"></i>
+                            li <i class="fa fa-link" aria-hidden="true"></i>
+                    .profileBox_companyNameDescription
+                        p 株式会社chatbox 代表
+                        p 後藤 知宏
+                        p Goto Tomohiro
+                        p 2015年に関西フロントエンドUGを立ち上げるなど関西のIT系コミュニティに積極的に参加。
+                         |仕事面ではPHPやフロントエンドを中心にWeb全般の制作・技術顧問として活動中。
+
+        div ◎TOPに戻る◎
+    //フッター（index.jadeが完成してから部品化してincludeする）
+
+
+    br
+    br
+    include ./_ga.html
