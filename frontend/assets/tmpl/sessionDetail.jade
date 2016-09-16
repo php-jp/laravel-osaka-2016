@@ -1,0 +1,38 @@
+doctype html
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no")
+        title laravel.osaka
+        link(rel="icon" type="image/png" href="./img/favicon.ico")
+        script(type='text/javascript')
+        link(rel='stylesheet' href='./assets/css/common.css')
+        link(rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css")
+        link(rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
+        meta(property="og:title", content="laravel.osaka 2016")
+        meta(property="og:image", content="http://php-jp.github.io/laravel-osaka-2016/img/ogp.jpg")
+        meta(property="og:description", content="１日まるごとLaravelのPHPエンジニア向けイベント。Laravel.osaka 2016 10月29日開催です。")
+        meta(property="og:url", content="http://php-jp.github.io/laravel-osaka-2016/")
+        meta(name="twitter:card", content="summary_large_image")
+        meta(name="twitter:title", content="laravel.osaka 2016")
+        meta(name="twitter:description", content="１日まるごとLaravelのPHPエンジニア向けイベント。Laravel.osaka 2016 10月29日開催です。")
+        meta(name="twitter:image", content="http://php-jp.github.io/laravel-osaka-2016/img/ogp.jpg")
+        script(src='https://use.fontawesome.com/28928d40e8.js')
+    body
+        .background
+        include ./_cover.jade
+        #sp-recruitArea
+            a.recruitBtn.speakerBtn(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2")
+                .innerBox
+                    .circle.circleLeft
+                    p 登壇者 募集
+                    .circle.circleRight
+            a.recruitBtn.sponsorBtn(href="http://goo.gl/forms/QAGiQUlDO26rYp173")
+                .innerBox
+                    .circle.circleLeft
+                    p スポンサー 募集
+                    .circle.circleRight
+        include ./_footer.jade
+        br
+        br
+        include ./_ga.html
