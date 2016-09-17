@@ -1,0 +1,67 @@
+@import "./_mixin.scss"; // 色コード、フォントサイズ、メディアクエリ
+@import "./_parts.scss"; // ページ間共通部品
+@import "./_propertyReset.scss"; // タグのデフォルトプロパティのリセット
+@import "./_adjustLayout.scss"; // 中央揃えなど、レイアウト調整の関数
+@import "./common.scss"; // 修正後、削除
+
+/*コーディング用の枠（あとで消す）*/
+div, p, ul, li, a {
+  border: 1px solid lightgrey;
+}
+.l-header {
+  .header_laravelOsaka {
+    color: $themaPink;
+    display: inline-block;
+  }
+}
+.l-pageArea--sessionDetail {
+  background-color: $themaPink--opacity;
+  .sessionDetail {
+    .sessionDetail_titleBox {
+      background-color: $accentNavy;
+      .sD_titleBox_innerBox {
+        width: 80%; // 仮
+        border: 2px solid $white--opacityMore;
+        .sD_tB_innerBox_title {
+          color: white;
+        }
+      }
+    }
+    .sessionDetail_contentBox {
+      background-color: $creamYellowColor--opacity;
+      .sD_contentBox_overview {
+        color: $accentNavy;
+      }
+      .sD_contentBox_hr {
+        color: $accentNavy--opacity;
+      }
+      .sD_contentBox_speakerBox {
+        .sD_cB_speakerBox_imageSns {
+          .sD_cB_sB_imageSns_image {
+            border-radius: 75px;
+          }
+          .sD_cB_sB_imageSns_sns {
+            background-color: white;
+            color: $themaPink;
+            text-align: center;
+            line-height: 2rem; //仮
+            width: 2rem; //仮
+            height: 2rem; //仮
+            border-radius: 2rem; //仮
+          }
+        }
+        .sD_cB_speakerBox_companyNameDescription {
+          .sD_cB_sB_companyNameDescription_company,
+          .sD_cB_sB_companyNameDescription_name,
+          .sD_cB_sB_companyNameDescription_kana,
+          .sD_cB_sB_companyNameDescription_description {
+            color: $themaPink;
+          }
+          .sD_cB_sB_companyNameDescription_name {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

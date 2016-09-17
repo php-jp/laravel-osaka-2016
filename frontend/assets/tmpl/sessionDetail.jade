@@ -23,41 +23,46 @@ html(lang="ja")
     //ヘッダー
     .l-header
         img(src="http://placehold.it/30x30")
-        h1 Laravel Osaka
+        h1.header_laravelOsaka Laravel Osaka
 
     //メインコンテンツエリア
     .l-pageArea--sessionDetail
-        div ◎
-        h2 セッション一覧
+        .contentHeadingMark--white
+        h2.contentHeading--white セッション一覧
 
         section.sessionDetail
             .sessionDetail_titleBox
-                h3 フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+                .sD_titleBox_innerBox
+                    h3.sD_tB_innerBox_title フロントエンドとコンテンツ配信のミライ ー Webはどう変わるか ー
             .sessionDetail_contentBox
-                p 変化の激しいWebの世界で、Webの表現力、可能性は大きく広がり続けています。
+                p.sD_contentBox_overview 変化の激しいWebの世界で、Webの表現力、可能性は大きく広がり続けています。
                     |CMSの界隈でもAPI対応やクラウド対応など、新しいWebの流れに対応しようとする動きが見られます。
                     |記事を管理し、配信するだったCMSから、一歩新しいWebのミライへ。
                     |アプリ化,SEO,クラウド対応など多様化する顧客要求を予測するヒントとして、
                     |フロントエンド技術の変遷から見えるミライのWebの姿を考えてみましょう。
-                div
+                .sD_contentBox_hr
                     <i class="fa fa-circle" aria-hidden="true"></i>
                     |<i class="fa fa-circle" aria-hidden="true"></i>
                     |<i class="fa fa-circle" aria-hidden="true"></i>
-                .profileBox
-                    .profileBox_imageSns
-                        img(src="http://placehold.it/150x150")
+                .sD_contentBox_speakerBox
+                    .sD_cB_speakerBox_imageSns
+                        img.sD_cB_sB_imageSns_image(src="http://placehold.it/150x150")
                         ul
-                            li <i class="fa fa-twitter" aria-hidden="true"></i>
-                            li <i class="fa fa-facebook" aria-hidden="true"></i>
-                            li <i class="fa fa-link" aria-hidden="true"></i>
-                    .profileBox_companyNameDescription
-                        p 株式会社chatbox 代表
-                        p 後藤 知宏
-                        p Goto Tomohiro
-                        p 2015年に関西フロントエンドUGを立ち上げるなど関西のIT系コミュニティに積極的に参加。
+                            li.sD_cB_sB_imageSns_sns <i class="fa fa-twitter" aria-hidden="true"></i>
+                            li.sD_cB_sB_imageSns_sns <i class="fa fa-facebook" aria-hidden="true"></i>
+                            li.sD_cB_sB_imageSns_sns <i class="fa fa-link" aria-hidden="true"></i>
+                    .sD_cB_speakerBox_companyNameDescription
+                        p.sD_cB_sB_companyNameDescription_company 株式会社chatbox 代表
+                        p.sD_cB_sB_companyNameDescription_name 後藤 知宏
+                        p.sD_cB_sB_companyNameDescription_kana Goto Tomohiro
+                        p.sD_cB_sB_companyNameDescription_description 2015年に関西フロントエンドUGを立ち上げるなど関西のIT系コミュニティに積極的に参加。
                          |仕事面ではPHPやフロントエンドを中心にWeb全般の制作・技術顧問として活動中。
 
-        div ◎TOPに戻る◎
+        .linkBtn--topPage
+            .linkBtn_innerBox
+                .lB_innerBox_circleMark
+                p.lB_innerBox_text TOPに戻る
+                .lB_innerBox_circleMark
     //フッター（index.jadeが完成してから部品化してincludeする）
 
 
