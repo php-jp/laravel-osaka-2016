@@ -6,9 +6,11 @@
 
 /*コーディング用の枠（あとで消す）*/
 div, p, ul, li, a {
-  border: 1px solid lightgrey;
+  //border: 1px solid lightgrey;
 }
 .l-header {
+  background-image: url("../../img/bg-pt-footer.png");
+  background-size: 3% auto;
   .header_laravelOsaka {
     color: $themaPink;
     display: inline-block;
@@ -33,33 +35,55 @@ div, p, ul, li, a {
         color: $accentNavy;
       }
       .sD_contentBox_hr {
-        color: $accentNavy--opacity;
+        text-align: center;
+        color: $accentNavy--opacityMoreMore;
       }
       .sD_contentBox_speakerBox {
+        position: relative;
         .sD_cB_speakerBox_imageSns {
-          .sD_cB_sB_imageSns_image {
-            border-radius: 75px;
-          }
-          .sD_cB_sB_imageSns_sns {
-            background-color: white;
-            color: $themaPink;
+          width: 45%;
+          .sD_cB_sB_imageSns_imageBox {
             text-align: center;
-            line-height: 2rem; //仮
-            width: 2rem; //仮
-            height: 2rem; //仮
-            border-radius: 2rem; //仮
+            .sD_cB_sB_iS_imageBox_image {
+              @include autoCircleSize(80%);
+              display: inline-block;
+              max-width: 180px;
+            }
+          }
+          .sD_cB_sB_imageSns_snsBox {
+            text-align: center;
+            .sD_cB_sB_iS_snsBox_sns {
+              background-color: white;
+              color: $themaPink;
+              text-align: center;
+              display: inline-block;
+              line-height: 2rem; //仮
+              width: 2rem; //仮
+              height: 2rem; //仮
+              border-radius: 2rem; //仮
+            }
           }
         }
-        .sD_cB_speakerBox_companyNameDescription {
-          .sD_cB_sB_companyNameDescription_company,
-          .sD_cB_sB_companyNameDescription_name,
-          .sD_cB_sB_companyNameDescription_kana,
-          .sD_cB_sB_companyNameDescription_description {
-            color: $themaPink;
-          }
-          .sD_cB_sB_companyNameDescription_name {
-            font-weight: bold;
-          }
+        .sD_cB_speakerBox_company,
+        .sD_cB_speakerBox_name,
+        .sD_cB_speakerBox_kana,
+        .sD_cB_speakerBox_description {
+          color: $themaPink;
+          position: absolute;
+          left: 45%;
+        }
+        .sD_cB_speakerBox_company {
+          top: 0;
+        }
+        .sD_cB_speakerBox_name {
+          top: 18%;
+          font-weight: bold;
+        }
+        .sD_cB_speakerBox_kana {
+          top: 28%;
+        }
+        .sD_cB_speakerBox_description {
+          top: 46%;
         }
       }
     }
