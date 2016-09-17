@@ -1,10 +1,18 @@
-$themaPink: #fb615c;
-$themaPink--opacity: rgba(251, 97, 92, 0.8);
-$accentNavy: #282b60;
+/*この辺はopacityで対応するのであとで削除*/
 $circleColor: #525580;
 $innerBoxColor: #8588A7;
 $laravelOsakaColor: #9094bd;
+
+/*ここから正式*/
+$themaPink: #fb615c;
+$themaPink--opacity: rgba(251, 97, 92, 0.8);
+$accentNavy: #282b60;
+$accentNavy--opacity: rgba(40, 43, 96, 0.8);
+$white--opacity: rgba(255, 255, 255, 0.8);
+$white--opacityMore: rgba(255, 255, 255, 0.6);
+$white--opacityMoreMore: rgba(255, 255, 255, 0.4);
 $creamYellowColor: #fcf5ed;
+$creamYellowColor--opacity: rgba(252, 245, 237, 0.8);
 
 $fontSizeBase: 14px;
 // Webフォントが重いので
