@@ -1,0 +1,48 @@
+@import "./_mixin.scss"; // 読み込み必要らしいので残しておく
+@import "./_adjustLayout.scss"; // 読み込み必要らしいので残しておく
+/*◯と見出し*/
+.contentHeadingMark--white { //h2の上の◎
+  @include blockCentered;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 0.9rem;
+  border: 6px solid $white--opacity;
+}
+.contentHeadingMark--navy { //h2の上の◎
+  @include blockCentered;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 0.9rem;
+  border: 6px solid $accentNavy--opacity;
+
+}
+.contentHeading--white { //コンテンツのタイトル（h2）
+  color: white;
+  text-align: center;
+}
+.contentHeading--navy { //コンテンツのタイトル（h2）
+  color: $accentNavy;
+  text-align: center;
+}
+/*ボタン*/
+.linkBtn--sessionDetailPage,
+.linkBtn--googleMap,
+.linkBtn--topPage {
+  background-color: $accentNavy;
+  .linkBtn_innerBox {
+    //width: 5rem; // 仮
+    border: 2px solid $white--opacityMore;
+    text-align: center;
+    .lB_innerBox_circleMark {
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 0.5rem;
+      border: 4px solid $white--opacityMoreMore;
+    }
+    .lB_innerBox_text {
+      display: inline-block;
+      color: white;
+    }
+  }
+}
