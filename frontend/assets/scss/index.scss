@@ -4,13 +4,13 @@
 @import "./_mixin.scss"; // 色コード、フォントサイズ、メディアクエリ
 @import "./_parts.scss"; // ページ間共通部品
 @import "./_propertyReset.scss"; // タグのデフォルトプロパティのリセット
-@import "./_adjustLayout.scss"; // 中央揃えなど、レイアウト調整の関数
+@import "./_adjustLayout.scss"; // 部品、レイアウト調整の関数
 @import "./_cover.scss"; // あとで修正が必要なsass（削除するべきかも）
 @import "./common.scss"; // 修正後、削除
 
 /*コーディング用の枠（あとで消す）*/
 div, p, ul, li, a {
-  border: 1px solid lightgrey;
+  //border: 1px solid lightgrey;
 }
 /*コンテンツ毎*/
 .l-aboutLaravelOsaka {
@@ -23,15 +23,51 @@ div, p, ul, li, a {
 }
 .l-sessionIndex {
   background-color: $themaPink--opacity;
-  .session {
-    .session_speakerImg,
-    .session_title,
-    .session_speakerCompany,
-    .session_speakerName {
-      color: white;
-    }
-    .session_speakerImg {
-      border-radius: 75px;
+  .sessionBox {
+    text-align: center;
+    .sB_session {
+      position: relative;
+      display: inline-block;
+      width: 43%;
+      min-width: 340px; //仮（上手くいくけど適切かはわからん）
+      .sB_session_speakerImgBox {
+        text-align: center;
+        width: 45%;
+        padding-top: 15px; // 一応きれいやけど修正可能性あり
+        padding-bottom: 15px; // 一応きれいやけど修正可能性あり
+        .sB_session_sIB_speakerImg--hidden,
+        .sB_session_sIB_speakerImg {
+          @include autoCircleSize(80%);
+          display: inline-block;
+          max-width: 180px;
+        }
+        .sB_session_sIB_speakerImg--hidden {
+          visibility: hidden;
+        }
+      }
+      .sB_session_title,
+      .sB_session_speakerCompany,
+      .sB_session_speakerName {
+        color: white;
+        position: absolute;
+        left: 45%;
+      }
+      .sB_session_title--andMore {
+        color: white;
+        position: absolute;
+        margin-top: 0;
+        top: 50%;
+        left: 40%;
+      }
+      .sB_session_title {
+        top: 0;
+      }
+      .sB_session_speakerCompany {
+        top: 55%;
+      }
+      .sB_session_speakerName {
+        top: 75%;
+      }
     }
   }
   .linkBtn--sessionDetailPage {
@@ -57,14 +93,52 @@ div, p, ul, li, a {
 .l-sponsor {
   background-image: url("../../img/bg-pt-footer.png");
   background-size: 3% auto;
-  .sponsorLogo {
-    background-color: white;
+  .sponsorBox {
+    text-align: center;
+    .sponsorBox_sponsorLogo {
+      display: inline-block;
+      background-color: white;
+      margin: 2rem; //仮
+      width: 20rem; //仮
+      height: 10rem; //仮
+    }
   }
 }
 .l-footer {
   background-color: $themaPink;
-  color: white;
+  padding-top: 20px; //仮
+  .footer_laravelOsaka,
+  .footer_sns_text {
+    color: white;
+  }
   .footer_laravelOsaka {
     text-align: center;
+  }
+  .footer_sns {
+    text-align: center;
+    .footer_sns--connpass {
+      padding-right: 1rem;
+    }
+    .footer_sns--facebook {
+      padding-left: 1rem;
+    }
+    .footer_sns--connpass,
+    .footer_sns--facebook {
+      display: inline-block;
+      height: 3rem;
+    }
+    .footer_sns_circleMark {
+      display: inline-block;
+      margin: 1rem 0.5rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 0.5rem;
+      border: 4px solid white;
+    }
+    .footer_sns_text {
+      vertical-align: top;
+      display: inline-block;
+      line-height: 3rem;
+    }
   }
 }

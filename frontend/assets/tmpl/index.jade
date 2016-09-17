@@ -58,33 +58,41 @@ html(lang="ja")
     .l-sessionIndex
       .contentHeadingMark--white
       h2.contentHeading--white セッション一覧
-      ul
-        li.session
-          img.session_speakerImg(src="http://placehold.it/150x150")
-          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p.session_speakerCompany 株式会社chatbox
-          p.session_speakerName 後藤知宏
-        li.session
-          img.session_speakerImg(src="http://placehold.it/150x150")
-          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p.session_speakerCompany 株式会社chatbox
-          p.session_speakerName 後藤知宏
-        li.session
-          img.session_speakerImg(src="http://placehold.it/150x150")
-          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p.session_speakerCompany 株式会社chatbox
-          p.session_speakerName 後藤知宏
-        li.session
-          img.session_speakerImg(src="http://placehold.it/150x150")
-          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p.session_speakerCompany 株式会社chatbox
-          p.session_speakerName 後藤知宏
-        li.session
-          img.session_speakerImg(src="http://placehold.it/150x150")
-          h3.session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-          p.session_speakerCompany 株式会社chatbox
-          p.session_speakerName 後藤知宏
-        li and more...
+      ul.sessionBox
+        li.sB_session
+          .sB_session_speakerImgBox
+            img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
+          h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.sB_session_speakerCompany 株式会社chatbox
+          p.sB_session_speakerName 後藤知宏
+        li.sB_session
+          .sB_session_speakerImgBox
+            img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
+          h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.sB_session_speakerCompany 株式会社chatbox
+          p.sB_session_speakerName 後藤知宏
+        li.sB_session
+          .sB_session_speakerImgBox
+            img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
+          h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.sB_session_speakerCompany 株式会社chatbox
+          p.sB_session_speakerName 後藤知宏
+        li.sB_session
+          .sB_session_speakerImgBox
+            img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
+          h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.sB_session_speakerCompany 株式会社chatbox
+          p.sB_session_speakerName 後藤知宏
+        li.sB_session
+          .sB_session_speakerImgBox
+            img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
+          h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+          p.sB_session_speakerCompany 株式会社chatbox
+          p.sB_session_speakerName 後藤知宏
+        li.sB_session
+          .sB_session_speakerImgBox
+            img.sB_session_sIB_speakerImg--hidden(src="http://placehold.it/150x150")
+          h3.sB_session_title--andMore and more...
       .linkBtn--sessionDetailPage ◎詳細を見る◎
 
     //アクセス
@@ -114,20 +122,24 @@ html(lang="ja")
     .l-sponsor
         .contentHeadingMark--navy
         h2.contentHeading--navy スポンサー
-        ul
-            li.sponsorLogo スポンサーロゴ
-            li.sponsorLogo スポンサーロゴ
-            li.sponsorLogo スポンサーロゴ
-            li.sponsorLogo スポンサーロゴ
-            li.sponsorLogo スポンサーロゴ
-            li.sponsorLogo スポンサーロゴ
+        ul.sponsorBox
+            li.sponsorBox_sponsorLogo スポンサーロゴ
+            li.sponsorBox_sponsorLogo スポンサーロゴ
+            li.sponsorBox_sponsorLogo スポンサーロゴ
+            li.sponsorBox_sponsorLogo スポンサーロゴ
+            li.sponsorBox_sponsorLogo スポンサーロゴ
+            li.sponsorBox_sponsorLogo スポンサーロゴ
 
     //共通フッター
     .l-footer
       p.footer_laravelOsaka Laravel.Osaka
-      ul
-        li ◎connpass
-        li ◎facebook
+      ul.footer_sns
+        li.footer_sns--connpass
+          .footer_sns_circleMark
+          a.footer_sns_text(href="http://laravel.connpass.com/" target="_blank") connpass
+        li.footer_sns--facebook
+          .footer_sns_circleMark
+          a.footer_sns_text(href="https://www.facebook.com/laravel.osaka" target="_blank") facebook
 
     br
     br
