@@ -70,9 +70,16 @@ div, p, ul, li, a {
       }
     }
   }
-  .linkBtn--sessionDetailPage {
-    @include blockCentered;
-    width: 10rem; //位置を中心にするために仮のwidth指定
+  .linkBtnBox--sessionDetailPage {
+    text-align: center;
+    .lBB_linkBtn--sessionDetailPage {
+      //@include blockCentered;
+      @include linkBtn;
+      .lB_innerBox_text { //ボタンwidthの調整
+        padding-left: 2.1rem;
+        padding-right: 2.1rem;
+      }
+    }
   }
 }
 .l-access {
@@ -84,10 +91,16 @@ div, p, ul, li, a {
     .accessInfo_requiredTime {
       color: white;
     }
-  }
-  .linkBtn--googleMap {
-    @include blockCentered;
-    width: 10rem; //位置を中心にするために仮のwidth指定
+    .linkBtnBox--googleMap {
+      text-align: center;
+      .lBB_linkBtn--googleMap {
+        @include linkBtn;
+        .lB_innerBox_text { //ボタンwidthの調整
+          padding-left: 0.6rem;
+          padding-right: 0.4rem;
+        }
+      }
+    }
   }
 }
 .l-sponsor {

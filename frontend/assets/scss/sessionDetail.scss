@@ -21,8 +21,8 @@ div, p, ul, li, a {
   .sessionDetail {
     .sessionDetail_titleBox {
       background-color: $accentNavy;
+      padding: 3px;
       .sD_titleBox_innerBox {
-        width: 80%; // 仮
         border: 2px solid $white--opacityMore;
         .sD_tB_innerBox_title {
           color: white;
@@ -85,6 +85,16 @@ div, p, ul, li, a {
         .sD_cB_speakerBox_description {
           top: 46%;
         }
+      }
+    }
+  }
+  .linkBtnBox--topPage {
+    text-align: center;
+    .lBB_linkBtn--topPage {
+      @include linkBtn;
+      .lB_innerBox_text { //ボタンwidthの調整
+        padding-left: 2.1rem;
+        padding-right: 2.1rem;
       }
     }
   }
