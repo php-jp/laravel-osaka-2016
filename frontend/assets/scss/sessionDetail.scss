@@ -167,7 +167,6 @@ body {
             padding-top: 0.5rem;
             .sD_cB_sB_iS_snsBox_sns {
               background-color: $white--opacity;
-              color: $themaPink;
               text-align: center;
               display: inline-block;
               line-height: 2.4rem; //仮
@@ -182,6 +181,11 @@ body {
                 height: 1.8rem; //仮
                 border-radius: 1.8rem; //仮
                 margin: 0;
+              }
+              .sD_cB_sB_iS_snsBox_sns--twitter,
+              .sD_cB_sB_iS_snsBox_sns--facebook,
+              .sD_cB_sB_iS_snsBox_sns--link {
+                color: $themaPink;
               }
             }
           }
