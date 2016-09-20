@@ -1,3 +1,4 @@
+/*タグのデフォルトで邪魔なやつをリセット*/
 ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -6,4 +7,7 @@ ul {
 }
 a {
   text-decoration: none;
+}
+p {
+  margin: 0;
 }

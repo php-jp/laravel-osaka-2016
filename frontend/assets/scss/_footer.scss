@@ -1,45 +1,47 @@
-@import "./_mixin.scss";
-
-#footer {
-  background-image: url("../../img/bg-pt-footer.png");
-  background-size: 5% auto;
-  height: 5em;
-  padding-bottom: 2em;
-  @include media {
-    background-size: 15% auto;
-    margin-top: 50px;
-  }
-  .title {
-    color: $laravelOsakaColor;
-    text-align: center;
-    padding-top: 0.8em;
-    font-size: 1.5em;
-    font-weight: $fontWeightBase * 2;
-    @include media {
-      margin-top: 0;
-      font-weight:bold;
-    }
-  }
-  .snsArea {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.2em;
-    text-align: center;
-    @include media {
-      margin-top: 0;
-    }
-  }
-  .snsLink {
-    display: inline-block;
-    text-align: center;
-    font-size: 1.3em;
-    text-decoration: none;
-    color: #EE5954;
-  }
-  //.connpass {
-  //  margin-left: 0;
-  //}
-  //.facebook {
-  //  margin-right: 0;
-  //}
-}
+//使わない
+//
+//@import "./_mixin.scss";
+//
+//#footer {
+//  background-image: url("../../img/bg-pt-footer.png");
+//  background-size: 5% auto;
+//  height: 5em;
+//  padding-bottom: 2em;
+//  @include media {
+//    background-size: 15% auto;
+//    margin-top: 50px;
+//  }
+//  .title {
+//    color: $laravelOsakaColor;
+//    text-align: center;
+//    padding-top: 0.8em;
+//    font-size: 1.5em;
+//    font-weight: $fontWeightBase * 2;
+//    @include media {
+//      margin-top: 0;
+//      font-weight:bold;
+//    }
+//  }
+//  .snsArea {
+//    margin-left: auto;
+//    margin-right: auto;
+//    margin-top: 0.2em;
+//    text-align: center;
+//    @include media {
+//      margin-top: 0;
+//    }
+//  }
+//  .snsLink {
+//    display: inline-block;
+//    text-align: center;
+//    font-size: 1.3em;
+//    text-decoration: none;
+//    color: #EE5954;
+//  }
+//  //.connpass {
+//  //  margin-left: 0;
+//  //}
+//  //.facebook {
+//  //  margin-right: 0;
+//  //}
+//}

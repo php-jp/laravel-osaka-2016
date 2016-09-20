@@ -20,9 +20,87 @@ html(lang="ja")
     script(src='https://use.fontawesome.com/28928d40e8.js')
   body
     .background
-    //見出し（あとで修正）
+
+    //見出し
     .l-cover
-      include ./_cover.jade
+      //ギザギザ専用のdiv（背景透明）
+      .cover_borderBox
+        //ギザギザの内側エリア（背景ピンク）
+        .cv_borderBox_contentBox
+          img(src="./img/logo.png").cv_bB_contentBox_laravelOsakaLogo
+          ul.cv_bB_contentBox_infoBox
+            li.cv_bB_cB_infoBox_dateInfo
+              .cv_bB_cB_B_dateInfo_icon <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+              p.cv_bB_cB_B_dateInfo_text 2016.10.29.sat
+            li.cv_bB_cB_infoBox_placeInfo
+              .cv_bB_cB_B_placeInfo_icon <i class="fa fa-map-marker" aria-hidden="true"></i>
+              a(href="http://www.motex.co.jp/" target="_blank").cv_bB_cB_B_placeInfo_link MOTEX Inc.
+
+          // 800px以下：display:none。.cover_borderBoxの中
+          .linkBtnBox--recruitSpeakerSponsor--pc
+            a.lBB_linkBtn--recruitSpeaker(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank")
+              .linkBtn_innerBox
+                .lB_innerBox_circleMark--left
+                p.lB_innerBox_text 登壇者募集
+                .lB_innerBox_circleMark--right
+            a.lBB_linkBtn--recruitSponsor(href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank")
+              .linkBtn_innerBox
+                .lB_innerBox_circleMark--left
+                p.lB_innerBox_text スポンサー募集
+                .lB_innerBox_circleMark--right
+
+      // 800px以下：display:block。.cover_borderBoxの外
+      .linkBtnBox--recruitSpeakerSponsor--sp
+        a.lBB_linkBtn--recruitSpeaker(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank")
+          .linkBtn_innerBox
+            .lB_innerBox_circleMark--left
+            p.lB_innerBox_text 登壇者募集
+            .lB_innerBox_circleMark--right
+        a.lBB_linkBtn--recruitSponsor(href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank")
+          .linkBtn_innerBox
+            .lB_innerBox_circleMark--left
+            p.lB_innerBox_text スポンサー募集
+            .lB_innerBox_circleMark--right
+
+
+        //.info
+            //  .icon
+            //    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+            //  p 2016.10.29.sat
+            //.info
+            //  .icon
+            //    <i class="fa fa-map-marker" aria-hidden="true"></i>
+            //  p
+                a(href="http://www.motex.co.jp/" target="_blank") MOTEX Inc.
+
+
+    //見出し
+    //.l-cover
+      //#borderBox
+        //#cover
+          img.logo(src='./img/logo.png')
+          .infoArea
+            .info
+              .icon
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+              p 2016.10.29.sat
+            .info
+              .icon
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              p
+                a(href="http://www.motex.co.jp/" target="_blank") MOTEX Inc.
+
+          .recruitArea
+            a.recruitBtn.speakerBtn(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank")
+              .innerBox
+                .circle.circleLeft
+                p 登壇者 募集
+                .circle.circleRight
+            a.recruitBtn.sponsorBtn(href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank")
+              .innerBox
+                .circle.circleLeft
+                p スポンサー 募集
+                .circle.circleRight
       #sp-recruitArea
         a.recruitBtn.speakerBtn(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2")
           .innerBox
@@ -34,7 +112,6 @@ html(lang="ja")
             .circle.circleLeft
             p スポンサー 募集
             .circle.circleRight
-      //include ./_footer.jade
 
     //laravel.osakaについて
     .l-aboutLaravelOsaka
@@ -144,16 +221,5 @@ html(lang="ja")
             li.sponsorBox_sponsorLogo スポンサーロゴ
 
     //共通フッター
-    .l-footer
-      p.footer_laravelOsaka Laravel.Osaka
-      ul.footer_sns
-        li.footer_sns--connpass
-          .footer_sns_circleMark
-          a.footer_sns_text(href="http://laravel.connpass.com/" target="_blank") connpass
-        li.footer_sns--facebook
-          .footer_sns_circleMark
-          a.footer_sns_text(href="https://www.facebook.com/laravel.osaka" target="_blank") facebook
-
-    br
-    br
+    include ./_footer--ver2
     include ./_ga.html
