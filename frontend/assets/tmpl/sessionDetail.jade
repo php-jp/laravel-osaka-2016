@@ -22,7 +22,7 @@ html(lang="ja")
     .background
     //ヘッダー
     .l-header
-        img(src="http://placehold.it/30x30")
+        img(src="./img/icn_logo.png").header_laravelIcon
         h1.header_laravelOsaka Laravel Osaka
 
     //メインコンテンツエリア
@@ -31,6 +31,7 @@ html(lang="ja")
         h2.contentHeading--white セッション一覧
 
         section.sessionDetail
+            .sessionDetail_contentBox--topParts
             .sessionDetail_boxForTitleBoxCentering
                 .sessionDetail_bFTBC_titleBox
                     .sD_bFTBC_titleBox_innerBox
@@ -42,9 +43,9 @@ html(lang="ja")
                     |アプリ化,SEO,クラウド対応など多様化する顧客要求を予測するヒントとして、
                     |フロントエンド技術の変遷から見えるミライのWebの姿を考えてみましょう。
                 .sD_contentBox_hr
-                    <i class="fa fa-circle" aria-hidden="true"></i>
-                    |<i class="fa fa-circle" aria-hidden="true"></i>
-                    |<i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="sD_contentBox_hr_part fa fa-circle" aria-hidden="true"></i>
+                    |<i class="sD_contentBox_hr_part fa fa-circle" aria-hidden="true"></i>
+                    |<i class="sD_contentBox_hr_part fa fa-circle" aria-hidden="true"></i>
                 .sD_contentBox_speakerBox
                     .sD_cB_speakerBox_imageSns
                         .sD_cB_sB_imageSns_imageBox

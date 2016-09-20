@@ -22,9 +22,25 @@ body {
 .l-header {
   background-image: url("../../img/bg-pt-footer.png");
   background-size: 3% auto;
+  .header_laravelIcon {
+    width: 2rem;
+    margin: 0.5rem 1rem;
+    @include media {
+      width: 1.5rem;
+      margin: 0.5rem 0.5rem 0.5rem 1rem;
+    }
+  }
   .header_laravelOsaka {
+    vertical-align: top;
+    font-size: $fontSizeBase--pc * 1.5;
+    font-weight: normal;
     color: $themaPink;
     display: inline-block;
+    margin: 0.5rem 0;
+    @include media {
+      margin: 0.8rem 0 0.5rem 0;
+      font-size: $fontSizeBase--sp * 1.2;
+    }
   }
 }
 .l-pageArea--sessionDetail {
@@ -41,65 +57,128 @@ body {
   }
   .sessionDetail {
     position: relative;
+    .sessionDetail_contentBox--topParts {
+      @include blockCentered;
+      height: 1.5rem;
+      width: 80VW; //仮
+      max-width: 900px; //仮
+      background-color: $creamYellowColor--opacity;
+      @include media {
+        width: 90VW;
+        height: 1rem;
+      }
+    }
     .sessionDetail_boxForTitleBoxCentering {
-      position: absolute;
-      top: 30px;
-      width: 100VW;
       .sessionDetail_bFTBC_titleBox {
         @include blockCentered;
         width: 85VW; //仮
         max-width: 920px; //仮
         background-color: $accentNavy;
         padding: 3px;
+        @include media {
+          width: 95VW;
+        }
         .sD_bFTBC_titleBox_innerBox {
           border: 2px solid $white--opacityMore;
           .sD_bFTBC_tB_innerBox_title {
-            height: 54px; //とりあえず一致
+            line-height: 1.6rem;
+            font-size: $fontSizeBase--pc * 1.2;
+            height: 54px; //titleBoxの高さを一定に設定
             margin: 1rem 2rem;
             color: white;
+            @include media {
+              font-size: $fontSizeBase--sp;
+              margin: 1rem;
+              height: 65px;
+              line-height: 1.3rem;
+            }
           }
         }
       }
     }
     .sessionDetail_contentBox {
       @include blockCentered;
+      padding-bottom: 3rem;
       width: 80VW; //仮
       max-width: 900px; //仮
       background-color: $creamYellowColor--opacity;
+      @include media {
+        width: 90VW;
+        padding-bottom: 3.5rem;
+      }
       .sD_contentBox_overview {
-        padding-top: 140px; //仮。position:absolute使うので。
-        padding-right: 2rem; //仮。position:absolute使うので。
-        padding-left: 2rem; //仮。position:absolute使うので。
+        line-height: 1.8rem;
+        padding: 1.8rem 2rem;
+        //padding-top: 2rem; //仮
+        //padding-right: 2rem; //仮
+        //padding-left: 2rem; //仮
         color: $accentNavy;
+        @include media {
+          //padding-top: 1.2rem;
+          padding: 1.2rem;
+          line-height: 1.4rem;
+        }
       }
       .sD_contentBox_hr {
+        font-size: $fontSizeBase--pc * 0.7;
         text-align: center;
         color: $accentNavy--opacityMoreMore;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        @include media {
+          font-size: $fontSizeBase--sp * 0.7;
+          padding-top: 0;
+          padding-bottom: 1.5rem;
+        }
+        .sD_contentBox_hr_part {
+          padding-left: 0.3rem;
+          padding-right: 0.3rem;
+          @include media {
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+          }
+        }
       }
       .sD_contentBox_speakerBox {
+        @include blockCentered;
         position: relative;
-        width: 70%;
+        width: 95%;
+        @include media {
+          width: 98%;
+        }
         .sD_cB_speakerBox_imageSns {
-          width: 45%;
+          width: 35%;
           .sD_cB_sB_imageSns_imageBox {
             text-align: center;
             .sD_cB_sB_iS_imageBox_image {
               @include autoCircleSize(80%);
               display: inline-block;
-              max-width: 180px;
+              max-width: 160px;
+              @include media {}
+              @include autoCircleSize(75%);
             }
           }
           .sD_cB_sB_imageSns_snsBox {
             text-align: center;
+            padding-top: 0.5rem;
             .sD_cB_sB_iS_snsBox_sns {
-              background-color: white;
+              background-color: $white--opacity;
               color: $themaPink;
               text-align: center;
               display: inline-block;
-              line-height: 2rem; //仮
-              width: 2rem; //仮
-              height: 2rem; //仮
-              border-radius: 2rem; //仮
+              line-height: 2.4rem; //仮
+              width: 2.4rem; //仮
+              height: 2.4rem; //仮
+              border-radius: 2.4rem; //仮
+              margin: 0 0.5rem;
+              @include media {
+                font-size: $fontSizeBase--sp;
+                line-height: 1.8rem; //仮
+                width: 1.8rem; //仮
+                height: 1.8rem; //仮
+                border-radius: 1.8rem; //仮
+                margin: 0;
+              }
             }
           }
         }
@@ -109,20 +188,36 @@ body {
         .sD_cB_speakerBox_description {
           color: $themaPink;
           position: absolute;
-          left: 45%;
+          left: 36%;
         }
         .sD_cB_speakerBox_company {
           top: 0;
+          font-size: $fontSizeBase--pc * 1.1;
+          @include media {
+            font-size: $fontSizeBase--sp * 1;
+          }
         }
         .sD_cB_speakerBox_name {
           top: 18%;
           font-weight: bold;
+          font-size: $fontSizeBase--pc * 1.1;
+          @include media {
+            font-size: $fontSizeBase--sp;
+          }
         }
         .sD_cB_speakerBox_kana {
-          top: 28%;
+          top: 33%;
+          font-size: $fontSizeBase--pc * 0.8;
         }
         .sD_cB_speakerBox_description {
-          top: 46%;
+          top: 51%;
+          line-height: 1.8rem;
+          padding-right: 4rem;
+          @include media {
+            font-size: $fontSizeBase--sp * 0.8;
+            padding-right: 0.5rem;
+            line-height: 1.1rem;
+          }
         }
       }
     }
