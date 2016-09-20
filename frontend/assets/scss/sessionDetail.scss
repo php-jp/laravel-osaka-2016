@@ -22,19 +22,19 @@ div, p, ul, li, a {
   background-color: $themaPink--opacity;
   .sessionDetail {
     position: relative;
-    .sessionDetail_boxForCentering {
+    .sessionDetail_boxForTitleBoxCentering {
       position: absolute;
       top: 30px;
       width: 100VW;
-      .sessionDetail_bFC_titleBox {
+      .sessionDetail_bFTBC_titleBox {
         @include blockCentered;
         width: 85VW; //仮
         max-width: 920px; //仮
         background-color: $accentNavy;
         padding: 3px;
-        .sD_bFC_titleBox_innerBox {
+        .sD_bFTBC_titleBox_innerBox {
           border: 2px solid $white--opacityMore;
-          .sD_bFC_tB_innerBox_title {
+          .sD_bFTBC_tB_innerBox_title {
             margin: 1rem 2rem;
             color: white;
           }
