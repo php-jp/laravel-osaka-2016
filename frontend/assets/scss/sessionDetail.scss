@@ -17,26 +17,34 @@ div, p, ul, li, a {
   }
 }
 .l-pageArea--sessionDetail {
+  /*タイトルの高さが変わったらどうなるか問題
+    中の文字の大きさを変えて高さ統一がいいかな？*/
   background-color: $themaPink--opacity;
   .sessionDetail {
     position: relative;
-    .sessionDetail_titleBox {
+    .sessionDetail_boxForCentering {
       position: absolute;
-      top: 40px;
-      background-color: $accentNavy;
-      padding: 3px;
-      .sD_titleBox_innerBox {
-        border: 2px solid $white--opacityMore;
-        .sD_tB_innerBox_title {
-          margin: 1rem 2rem;
-          color: white;
+      top: 30px;
+      width: 100VW;
+      .sessionDetail_bFC_titleBox {
+        @include blockCentered;
+        width: 85VW; //仮
+        max-width: 920px; //仮
+        background-color: $accentNavy;
+        padding: 3px;
+        .sD_bFC_titleBox_innerBox {
+          border: 2px solid $white--opacityMore;
+          .sD_bFC_tB_innerBox_title {
+            margin: 1rem 2rem;
+            color: white;
+          }
         }
       }
     }
     .sessionDetail_contentBox {
       @include blockCentered;
       width: 80VW; //仮
-      max-width: 1000px; //仮
+      max-width: 900px; //仮
       background-color: $creamYellowColor--opacity;
       .sD_contentBox_overview {
         padding-top: 140px; //仮。position:absolute使うので。
