@@ -15,7 +15,12 @@ $white--opacityMoreMore: rgba(255, 255, 255, 0.4);
 $creamYellowColor: #fcf5ed;
 $creamYellowColor--opacity: rgba(252, 245, 237, 0.8);
 
-$fontSizeBase: 14px;
+$fontSizeBase: 14px; //もともとのやつ
+
+$fontSizeBase--pc: 16px; //pc
+$fontSizeBase--sp: 14px; //sp
+
+
 // Webフォントが重いので
 $fontFamilyBase: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 $fontWeightBase: 100;
