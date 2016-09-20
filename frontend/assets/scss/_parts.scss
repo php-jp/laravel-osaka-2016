@@ -7,6 +7,12 @@
   height: 0.9rem;
   border-radius: 0.9rem;
   border: 6px solid $white--opacity;
+  @include media {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0.8rem;
+    border: 5px solid $white--opacity;
+  }
 }
 .contentHeadingMark--navy { //h2の上の◎
   @include blockCentered;
@@ -14,48 +20,30 @@
   height: 0.9rem;
   border-radius: 0.9rem;
   border: 6px solid $accentNavy--opacity;
-
+  @include media {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0.8rem;
+    border: 5px solid $accentNavy--opacity;
+  }
 }
 .contentHeading--white { //コンテンツのタイトル（h2）
   color: white;
   text-align: center;
+  @include media {
+    font-size: $fontSizeBase--sp * 1.2;
+  }
 }
 .contentHeading--navy { //コンテンツのタイトル（h2）
   color: $accentNavy;
   text-align: center;
+  @include media {
+    font-size: $fontSizeBase--sp * 1.2;
+  }
 }
-/*ボタン*/
-//.linkBtn--sessionDetailPage,
-//.linkBtn--googleMap,
-//.linkBtn--topPage {
-//  display: inline-block;
-//  background-color: $accentNavy;
-//  padding: 3px;
-//  .linkBtn_innerBox {
-//    border: 2px solid $white--opacityMore;
-//    text-align: center;
-//    height: 4rem;
-//    .lB_innerBox_circleMark {
-//      display: inline-block;
-//      margin: 1.5rem 0.5rem;
-//      width: 0.5rem;
-//      height: 0.5rem;
-//      border-radius: 0.5rem;
-//      border: 4px solid $white--opacityMoreMore;
-//    }
-//    .lB_innerBox_text {
-//      vertical-align: top;
-//      display: inline-block;
-//      color: white;
-//      line-height: 4rem;
-//      padding-left: 1rem;
-//      padding-right: 1rem;
-//    }
-//  }
-//}
 @mixin linkBtn {
   /*
-  ボタンサイズが可変になってるので
+  ボタンサイズ（横幅）が可変になってるので
   各ボタンの.lB_innerBox_textのpadding-left/padding-right
   を調整してだいたい同じサイズにする
   */

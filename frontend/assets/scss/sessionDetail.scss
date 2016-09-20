@@ -8,6 +8,17 @@
 div, p, ul, li, a {
   //border: 1px solid lightgrey;
 }
+body {
+  font-family: $fontFamilyBase;
+}
+/*もともとのやつを修正したら*に書き換え*/
+.l-header,
+.l-pageArea--sessionDetail {
+  font-size: $fontSizeBase--pc;
+  @include media {
+    font-size: $fontSizeBase--sp;
+  }
+}
 .l-header {
   background-image: url("../../img/bg-pt-footer.png");
   background-size: 3% auto;
@@ -20,6 +31,14 @@ div, p, ul, li, a {
   /*タイトルの高さが変わったらどうなるか問題
     中の文字の大きさを変えて高さ統一がいいかな？*/
   background-color: $themaPink--opacity;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  @include media {
+    padding-top: 2rem;
+  }
+  .contentHeading--white {
+    margin-bottom: 2.5rem;
+  }
   .sessionDetail {
     position: relative;
     .sessionDetail_boxForTitleBoxCentering {
@@ -35,6 +54,7 @@ div, p, ul, li, a {
         .sD_bFTBC_titleBox_innerBox {
           border: 2px solid $white--opacityMore;
           .sD_bFTBC_tB_innerBox_title {
+            height: 54px; //とりあえず一致
             margin: 1rem 2rem;
             color: white;
           }
@@ -109,6 +129,7 @@ div, p, ul, li, a {
   }
   .linkBtnBox--topPage {
     text-align: center;
+    padding-top: 5rem;
     .lBB_linkBtn--topPage {
       @include linkBtn;
       .lB_innerBox_text { //ボタンwidthの調整
