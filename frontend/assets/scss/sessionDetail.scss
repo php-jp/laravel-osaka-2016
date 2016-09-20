@@ -57,6 +57,10 @@ body {
   }
   .sessionDetail {
     position: relative;
+    margin-top: 4rem;
+    @include media {
+      margin-top: 3rem;
+    }
     .sessionDetail_contentBox--topParts {
       @include blockCentered;
       height: 1.5rem;
