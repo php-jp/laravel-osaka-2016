@@ -6,17 +6,6 @@
 @import "./_adjustLayout.scss"; // 中央揃えなど、レイアウト調整の関数
 @import "./common.scss"; // 修正後、削除
 
-//body {
-//  font-family: $fontFamilyBase;
-//}
-///*もともとのやつを修正したら*に書き換え*/
-//.l-header,
-//.l-pageArea--sessionDetail {
-//  font-size: $fontSizeBase--pc;
-//  @include media {
-//    font-size: $fontSizeBase--sp;
-//  }
-//}
 .l-header {
   background-image: url("../../img/bg-pt-footer.png");
   background-size: 3% auto;
