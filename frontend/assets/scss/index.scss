@@ -9,20 +9,43 @@
 @import "./_footer--ver2.scss"; // 共通フッター
 @import "./common.scss"; // 修正後、削除
 
-body {
-  font-family: $fontFamilyBase;
-}
+//body {
+//  font-family: $fontFamilyBase;
+//  background: $creamYellowColor;
+//}
+// 全画面に表示する際にはhtmlから100%に
+//html,body{
+//  height:100%;
+//}
+
+//body {
+  //font-family: $fontFamilyBase;
+  // 背景に色をつけると下のみょんみょんが綺麗
+//}
+
+//.background{
+//  //背景固定したいときはDOMを1つ置いてみる。
+//  width: 100VW;
+//  height: 100VW;
+//  position: fixed;
+//  top:0;
+//  left:0;
+//  background-image: url('../../img/main.jpg');
+//  background-size: cover;
+//  z-index: -1;
+//}
+
 /*もともとのやつを修正したら*に書き換え*/
-.l-aboutLaravelOsaka,
-.l-sessionIndex,
-.l-access,
-.l-sponsor,
-.l-footer {
-  font-size: $fontSizeBase--pc;
-  @include media {
-    font-size: $fontSizeBase--sp;
-  }
-}
+//.l-aboutLaravelOsaka,
+//.l-sessionIndex,
+//.l-access,
+//.l-sponsor,
+//.l-footer {
+//  font-size: $fontSizeBase--pc;
+//  @include media {
+//    font-size: $fontSizeBase--sp;
+//  }
+//}
 /*コンテンツ毎*/
 .l-cover {
   padding-bottom: 3rem;
@@ -165,8 +188,8 @@ body {
       .lBB_linkBtn--recruitSponsor {
         margin-top: 0.2rem;
         .lB_innerBox_text { //ボタンwidthの調整
-          padding-left: 1.1rem;
-          padding-right: 1.1rem;
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
         }
       }
     }
