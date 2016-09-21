@@ -83,7 +83,7 @@ html(lang="ja")
     //セッション一覧
     .l-sessionIndex
       .contentHeadingMark--white
-      h2.contentHeading--white セッション一覧
+      h2.contentHeading--white Speakers
       ul.sessionBox
         li.sB_session
           a(href="./session.html").sB_sessionLink
@@ -131,6 +131,34 @@ html(lang="ja")
             .lB_innerBox_circleMark--left
             p.lB_innerBox_text 詳細を見る
             .lB_innerBox_circleMark--right
+
+    //タイムテーブル
+    .l-timeTable
+      .contentHeadingMark--navy
+      h2.contentHeading--navy タイムテーブル
+      ul.timeTableSheet
+        li.timeTableSheet_box
+          .timeTableSheet_box_time 10:00
+          .timeTableSheet_box_content--opening オープニング
+        li.timeTableSheet_box
+          .timeTableSheet_box_time 10:15
+          .timeTableSheet_box_content--sessionA session A
+        li.timeTableSheet_box
+          .timeTableSheet_box_time 12:00
+          .timeTableSheet_box_content--lunchTime 昼休み
+        li.timeTableSheet_box
+          .timeTableSheet_box_time 13:00
+          .timeTableSheet_box_content--sessionB session B
+        li.timeTableSheet_box
+          .timeTableSheet_box_time 15:00
+          .timeTableSheet_box_content--sessionC session C
+        li.timeTableSheet_box
+          .timeTableSheet_box_time 17:00
+          .timeTableSheet_box_content--LT Lightning Talk
+        li.timeTableSheet_box
+          .timeTableSheet_box_time 18:00
+          .timeTableSheet_box_content--closing クロージング
+      p.timeTableAttention ※ 当日のタイムスケジュールは、企画および当日の諸事情により、予告なく変更となる場合があります。
 
 
     //アクセス

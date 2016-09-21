@@ -265,6 +265,93 @@
     }
   }
 }
+.l-timeTable {
+  background-image: url("../../img/bg-pt-footer.png");
+  background-size: 3% auto;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  @include media {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    background-size: 10% auto;
+  }
+  .timeTableSheet {
+    @include blockCentered;
+    width: 80VW;
+    max-width: 800px;
+    padding-top: 2rem;
+    @include media {
+      padding-top: 1rem;
+    }
+    .timeTableSheet_box {
+      background-color: white;
+      height: 5rem;
+      margin-bottom: 0.5rem;
+      @include media {
+        height: 3.5rem;
+      }
+      .timeTableSheet_box_time,
+      .timeTableSheet_box_content--opening,
+      .timeTableSheet_box_content--sessionA,
+      .timeTableSheet_box_content--lunchTime,
+      .timeTableSheet_box_content--sessionB,
+      .timeTableSheet_box_content--sessionC,
+      .timeTableSheet_box_content--LT,
+      .timeTableSheet_box_content--closing {
+        display: inline-block;
+        line-height: 5rem;
+        @include media {
+          line-height: 3.5rem;
+        }
+      }
+      .timeTableSheet_box_content--opening,
+      .timeTableSheet_box_content--sessionA,
+      .timeTableSheet_box_content--lunchTime,
+      .timeTableSheet_box_content--sessionB,
+      .timeTableSheet_box_content--sessionC,
+      .timeTableSheet_box_content--LT,
+      .timeTableSheet_box_content--closing {
+        color: $accentNavy;
+        padding-left: 1.5rem;
+        font-size: $fontSizeBase--pc * 1.1;
+        @include media {
+          padding-left: 1rem;
+          font-size: $fontSizeBase--sp * 1.1;
+        }
+      }
+      .timeTableSheet_box_content--sessionA,
+      .timeTableSheet_box_content--sessionB,
+      .timeTableSheet_box_content--sessionC,
+      .timeTableSheet_box_content--LT {
+        font-weight: bold;
+      }
+      .timeTableSheet_box_time {
+        background-color: $themaPink;
+        color: white;
+        font-size: $fontSizeBase--pc * 1.2;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        @include media {
+          font-size: $fontSizeBase--sp * 1.2;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+  .timeTableAttention {
+    @include blockCentered;
+    display: block;
+    color: $accentNavy;
+    font-size: $fontSizeBase--pc * 0.8;
+    width: 80VW;
+    max-width: 800px;
+    line-height: 1.2rem;
+    @include media {
+      font-weight: $fontSizeBase--sp * 0.8;
+    }
+  }
+}
 .l-access {
   position: relative;
   height: 700px;
