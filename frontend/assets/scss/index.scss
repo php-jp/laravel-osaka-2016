@@ -1,15 +1,10 @@
-//@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
-//@import "./_footer.scss"; //新しいfooterに変えるので不要
-//@import "./_cover.scss"; // あとで修正が必要なsass（修正後、削除）
-
+@import "./_common.scss"; // 背景、body
 @import "./_mixin.scss"; // 色コード、フォントサイズ、メディアクエリ
 @import "./_parts.scss"; // ページ間共通部品
+@import "./_footer.scss"; // 共通フッター
 @import "./_propertyReset.scss"; // タグのデフォルトプロパティのリセット
 @import "./_adjustLayout.scss"; // 部品、レイアウト調整の関数
-@import "./_footer--ver2.scss"; // 共通フッター
-@import "./common.scss"; // 修正後、削除
 
-/*コンテンツ毎*/
 .l-cover {
   padding-bottom: 3rem;
   @include media {
@@ -17,7 +12,6 @@
   }
   .cover_borderBox { //ギザギザ専用のdiv（背景透明）
     width: 530px;
-    //height: 630px;
     margin-right: auto;
     margin-left: auto;
     border-image: url("../../img/border-img.png") 15 round;
@@ -26,7 +20,6 @@
     @include media {
       border-width: 6px 0 6px 0;
       width: 100VW;
-      //height: 400px;
     }
     .cv_borderBox_contentBox { //ギザギザの内側エリア（背景ピンク）
       background-color: rgba(251, 97, 92, 0.8);
@@ -95,8 +88,8 @@
           }
         }
       }
-      /*800以下：display:none
-      .cover_borderBoxの中*/
+      //800以下：display:none
+      //.cover_borderBoxの中
       .linkBtnBox--recruitSpeakerSponsor--pc {
         padding-bottom: 2rem;
         text-align: center;
@@ -124,14 +117,14 @@
       }
     }
   }
-  /*800以下：display:block
-  .cover_borderBoxの外*/
+  //800以下：display:block
+  //.cover_borderBoxの外
   .linkBtnBox--recruitSpeakerSponsor--sp {
     display: none;
     @include media {
-      /*表示*/
+      //表示
       display: block;
-      /*以下、プロパティの適応*/
+      //以下、プロパティの適応
       @include blockCentered;
       padding-top: 3rem;
       width: 50VW;
@@ -289,21 +282,20 @@
   .accessInfoBox {
     position: absolute;
     top: 0;
+    right: 0;
     background-color: $themaPink;
-    //width: 40VW; //仮
     margin-top: 35px;
     margin-bottom: 35px;
-    margin-left: 35px;
+    margin-right: 35px;
     padding-top: 2rem;
     padding-bottom: 3rem;
     @include media {
       padding-top: 2rem;
       padding-bottom: 3rem;
       position: static;
-      //height: 60%;
       margin-top: 0;
       margin-bottom: 0;
-      margin-left: 0;
+      margin-right: 0;
     }
     .accessInfo_address,
     .accessInfo_station,
@@ -363,9 +355,9 @@
     .sponsorBox_sponsorLogo {
       display: inline-block;
       background-color: white;
-      margin: 2rem; //仮
-      width: 20rem; //仮
-      height: 10rem; //仮
+      margin: 2rem;
+      width: 20rem;
+      height: 10rem;
       @include media {
         width: 70%;
         max-width: 18rem;

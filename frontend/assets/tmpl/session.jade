@@ -6,7 +6,7 @@ html(lang="ja")
         title laravel.osaka
         link(rel="icon" type="image/png" href="./img/favicon.ico")
         script(type='text/javascript')
-        link(rel='stylesheet' href='./assets/css/sessionDetail.css')
+        link(rel='stylesheet' href='./assets/css/session.css')
         link(rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css")
         link(rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
         meta(property="og:title", content="laravel.osaka 2016")
@@ -21,9 +21,7 @@ html(lang="ja")
     body
     .background
     //ヘッダー
-    .l-header
-        img(src="./img/icn_logo.png").header_laravelIcon
-        h1.header_laravelOsaka Laravel Osaka
+    include ./_header
 
     //メインコンテンツエリア
     .l-pageArea--sessionDetail
@@ -138,5 +136,5 @@ html(lang="ja")
                     .lB_innerBox_circleMark--right
 
     //共通フッター
-    include ./_footer--ver2
+    include ./_footer
     include ./_ga.html

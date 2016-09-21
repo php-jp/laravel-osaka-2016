@@ -1,6 +1,6 @@
 @import "./_mixin.scss"; // 読み込み必要らしいので残しておく
 @import "./_adjustLayout.scss"; // 読み込み必要らしいので残しておく
-/*◯と見出し*/
+//◯と見出し
 .contentHeadingMark--white { //h2の上の◎
   @include blockCentered;
   width: 0.9rem;
@@ -42,11 +42,9 @@
   }
 }
 @mixin linkBtn {
-  /*
-  ボタンサイズ（横幅）が可変になってるので
-  各ボタンの.lB_innerBox_textのpadding-left/padding-right
-  を調整してだいたい同じサイズにする
-  */
+  //ボタンサイズ（横幅）が可変になってるので
+  //各ボタンの.lB_innerBox_textのpadding-left/padding-right
+  //を調整してだいたい同じサイズにする
   display: inline-block; //消さないこと
   background-color: $accentNavy;
   padding: 3px;

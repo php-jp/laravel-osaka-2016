@@ -1,38 +1,14 @@
+@import "./_common.scss"; // 背景、body
 @import "./_mixin.scss"; // 色コード、フォントサイズ、メディアクエリ
 @import "./_parts.scss"; // ページ間共通部品
-@import "./_footer--ver2.scss"; // 共通フッター
-
+@import "./_header.scss"; // ヘッダー
+@import "./_footer.scss"; // 共通フッター
 @import "./_propertyReset.scss"; // タグのデフォルトプロパティのリセット
 @import "./_adjustLayout.scss"; // 中央揃えなど、レイアウト調整の関数
-@import "./common.scss"; // 修正後、削除
 
-.l-header {
-  background-image: url("../../img/bg-pt-footer.png");
-  background-size: 3% auto;
-  .header_laravelIcon {
-    width: 2rem;
-    margin: 0.5rem 1rem;
-    @include media {
-      width: 1.5rem;
-      margin: 0.5rem 0.5rem 0.5rem 1rem;
-    }
-  }
-  .header_laravelOsaka {
-    vertical-align: top;
-    font-size: $fontSizeBase--pc * 1.5;
-    font-weight: normal;
-    color: $themaPink;
-    display: inline-block;
-    margin: 0.5rem 0;
-    @include media {
-      margin: 0.8rem 0 0.5rem 0;
-      font-size: $fontSizeBase--sp * 1.2;
-    }
-  }
-}
 .l-pageArea--sessionDetail {
-  /*タイトルの高さが変わったらどうなるか問題
-    中の文字の大きさを変えて高さ統一がいいかな？*/
+  //タイトルの高さが変わったらどうなるか問題
+  //中の文字の大きさを変えて高さ統一がいいかな？
   background-color: $themaPink--opacity;
   padding-top: 4rem;
   padding-bottom: 6rem;
@@ -48,8 +24,8 @@
     .sessionDetail_contentBox--topParts {
       @include blockCentered;
       height: 1.5rem;
-      width: 80VW; //仮
-      max-width: 900px; //仮
+      width: 80VW;
+      max-width: 900px;
       background-color: $creamYellowColor--opacity;
       @include media {
         width: 90VW;
@@ -59,8 +35,8 @@
     .sessionDetail_boxForTitleBoxCentering {
       .sessionDetail_bFTBC_titleBox {
         @include blockCentered;
-        width: 85VW; //仮
-        max-width: 920px; //仮
+        width: 85VW;
+        max-width: 920px;
         background-color: $accentNavy;
         padding: 3px;
         @include media {
@@ -87,8 +63,8 @@
     .sessionDetail_contentBox {
       @include blockCentered;
       padding-bottom: 3rem;
-      width: 80VW; //仮
-      max-width: 900px; //仮
+      width: 80VW;
+      max-width: 900px;
       background-color: $creamYellowColor--opacity;
       @include media {
         width: 90VW;
@@ -99,7 +75,6 @@
         padding: 1.8rem 2rem;
         color: $accentNavy;
         @include media {
-          //padding-top: 1.2rem;
           padding: 1.2rem;
           line-height: 1.4rem;
         }

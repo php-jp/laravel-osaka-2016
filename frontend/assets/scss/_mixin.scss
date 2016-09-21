@@ -1,9 +1,3 @@
-/*この辺はopacityで対応するのであとで削除*/
-$circleColor: #525580;
-$innerBoxColor: #8588A7;
-$laravelOsakaColor: #9094bd;
-
-/*ここから正式*/
 $themaPink: #fb615c;
 $themaPink--opacity: rgba(251, 97, 92, 0.8);
 $accentNavy: #282b60;
@@ -15,11 +9,8 @@ $white--opacityMoreMore: rgba(255, 255, 255, 0.4);
 $creamYellowColor: #fcf5ed;
 $creamYellowColor--opacity: rgba(252, 245, 237, 0.8);
 
-$fontSizeBase: 14px; //もともとのやつ
-
 $fontSizeBase--pc: 16px; //pc
 $fontSizeBase--sp: 14px; //sp
-
 
 // Webフォントが重いので
 $fontFamilyBase: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;

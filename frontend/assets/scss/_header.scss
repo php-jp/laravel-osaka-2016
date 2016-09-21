@@ -1,0 +1,26 @@
+@import "./_mixin.scss"; // 色コード、フォントサイズ、メディアクエリ
+
+.l-header {
+  background-image: url("../../img/bg-pt-footer.png");
+  background-size: 3% auto;
+  .header_laravelIcon {
+    width: 2rem;
+    margin: 0.5rem 1rem;
+    @include media {
+      width: 1.5rem;
+      margin: 0.5rem 0.5rem 0.5rem 1rem;
+    }
+  }
+  .header_laravelOsaka {
+    vertical-align: top;
+    font-size: $fontSizeBase--pc * 1.5;
+    font-weight: normal;
+    color: $themaPink;
+    display: inline-block;
+    margin: 0.5rem 0;
+    @include media {
+      margin: 0.8rem 0 0.5rem 0;
+      font-size: $fontSizeBase--sp * 1.2;
+    }
+  }
+}
