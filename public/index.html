@@ -6,7 +6,7 @@
     <title>laravel.osaka</title>
     <link rel="icon" type="image/png" href="./img/favicon.ico">
     <script type="text/javascript"></script>
-    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
     <meta property="og:title" content="laravel.osaka 2016">
@@ -21,46 +21,205 @@
   </head>
   <body>
     <div class="background"></div>
-    <div id="borderBox">
-      <div id="cover"><img src="./img/logo.png" class="logo">
-        <div class="infoArea">
-          <div class="info">
-            <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
-            <p>2016.10.29.sat</p>
-          </div>
-          <div class="info">
-            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-            <p><a href="http://www.motex.co.jp/" target="_blank">MOTEX Inc.</a></p>
-          </div>
+    <!--見出し-->
+    <div class="l-cover">
+      <!--ギザギザ専用のdiv（背景透明）-->
+      <div class="cover_borderBox">
+        <!--ギザギザの内側エリア（背景ピンク）-->
+        <div class="cv_borderBox_contentBox"><img src="./img/logo.png" class="cv_bB_contentBox_laravelOsakaLogo">
+          <ul class="cv_bB_contentBox_infoBox">
+            <li class="cv_bB_cB_infoBox_dateInfo">
+              <div class="cv_bB_cB_B_dateInfo_icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+              <p class="cv_bB_cB_B_dateInfo_text">2016.10.29.sat</p>
+            </li>
+            <li class="cv_bB_cB_infoBox_placeInfo">
+              <div class="cv_bB_cB_B_placeInfo_icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div><a href="http://www.motex.co.jp/" target="_blank" class="cv_bB_cB_B_placeInfo_link">MOTEX Inc.</a>
+            </li>
+          </ul>
+          <!-- 800px以下：display:none。.cover_borderBoxの中-->
+          <div class="linkBtnBox--recruitSpeakerSponsor--pc"><a href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank" class="lBB_linkBtn--recruitSpeaker">
+              <div class="linkBtn_innerBox">
+                <div class="lB_innerBox_circleMark--left"></div>
+                <p class="lB_innerBox_text">登壇者募集</p>
+                <div class="lB_innerBox_circleMark--right"></div>
+              </div></a><a href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank" class="lBB_linkBtn--recruitSponsor">
+              <div class="linkBtn_innerBox">
+                <div class="lB_innerBox_circleMark--left"></div>
+                <p class="lB_innerBox_text">スポンサー募集</p>
+                <div class="lB_innerBox_circleMark--right"></div>
+              </div></a></div>
         </div>
-        <div class="recruitArea"><a href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank" class="recruitBtn speakerBtn">
-            <div class="innerBox">
-              <div class="circle circleLeft"></div>
-              <p>登壇者 募集</p>
-              <div class="circle circleRight"></div>
-            </div></a><a href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank" class="recruitBtn sponsorBtn">
-            <div class="innerBox">
-              <div class="circle circleLeft"></div>
-              <p>スポンサー 募集</p>
-              <div class="circle circleRight"></div>
+      </div>
+      <!-- 800px以下：display:block。.cover_borderBoxの外-->
+      <div class="linkBtnBox--recruitSpeakerSponsor--sp"><a href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank" class="lBB_linkBtn--recruitSpeaker">
+          <div class="linkBtn_innerBox">
+            <div class="lB_innerBox_circleMark--left"></div>
+            <p class="lB_innerBox_text">登壇者募集</p>
+            <div class="lB_innerBox_circleMark--right"></div>
+          </div></a><a href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank" class="lBB_linkBtn--recruitSponsor">
+          <div class="linkBtn_innerBox">
+            <div class="lB_innerBox_circleMark--left"></div>
+            <p class="lB_innerBox_text">スポンサー募集</p>
+            <div class="lB_innerBox_circleMark--right"></div>
+          </div></a></div>
+    </div>
+    <!--laravel.osakaについて-->
+    <div class="l-aboutLaravelOsaka">
+      <div class="contentHeadingMark--navy"></div>
+      <h2 class="contentHeading--navy">Laravel Osaka 2016 とは</h2>
+      <p class="laravelOsakaOverview">PHPアプリケーション開発の現場で人気の高いフレームワーク「Laravel」<br>そんな「Laravel」をテーマに、1日 丸ごとLaravelのセッションイベントがスタートします。<br>Laravelを日常の業務でバリバリ使ってる経験者も、<br>これからLaravel/PHPをはじめようとする人も、きっと楽しめる充実のセッション内容!!<br>「Laravelに興味があるけど難しい・・・」<br>「フレームワークが初めてなんだけど・・・」<br>という方も是非お気軽にご参加ください!!</p>
+    </div>
+    <!--セッション一覧-->
+    <div class="l-sessionIndex">
+      <div class="contentHeadingMark--white"></div>
+      <h2 class="contentHeading--white">Speakers</h2>
+      <ul class="sessionBox">
+        <li class="sB_session"><a href="./session.html" class="sB_sessionLink">
+            <div class="sB_session_speakerImgBox"><img src="./profile/mikakane.jpg" class="sB_session_sIB_speakerImg"></div>
+            <h3 class="sB_session_title">Laravel アプリケーションとテスト</h3>
+            <p class="sB_session_speakerCompany">株式会社 chatbox</p>
+            <p class="sB_session_speakerName">後藤知宏</p></a></li>
+        <li class="sB_session"><a href="./session.html" class="sB_sessionLink">
+            <div class="sB_session_speakerImgBox"><img src="http://placehold.it/150x150" class="sB_session_sIB_speakerImg"></div>
+            <h3 class="sB_session_title">フロントエンドとコンテンツ配信のミライーWebはどう変わるかー</h3>
+            <p class="sB_session_speakerCompany">株式会社chatbox</p>
+            <p class="sB_session_speakerName">後藤知宏</p></a></li>
+        <li class="sB_session"><a href="./session.html" class="sB_sessionLink">
+            <div class="sB_session_speakerImgBox"><img src="./profile/mikakane.jpg" class="sB_session_sIB_speakerImg"></div>
+            <h3 class="sB_session_title">Laravelにおける後悔しないためのアプリケーション設計</h3>
+            <p class="sB_session_speakerCompany">株式会社イノベーター・ジャパン</p>
+            <p class="sB_session_speakerName">松尾 大(まつお まさる)</p></a></li>
+        <li class="sB_session"><a href="./session.html" class="sB_sessionLink">
+            <div class="sB_session_speakerImgBox"><img src="http://placehold.it/150x150" class="sB_session_sIB_speakerImg"></div>
+            <h3 class="sB_session_title">フロントエンドとコンテンツ配信のミライーWebはどう変わるかー</h3>
+            <p class="sB_session_speakerCompany">株式会社chatbox</p>
+            <p class="sB_session_speakerName">後藤知宏</p></a></li>
+        <li class="sB_session"><a href="./session.html" class="sB_sessionLink">
+            <div class="sB_session_speakerImgBox"><img src="http://placehold.it/150x150" class="sB_session_sIB_speakerImg"></div>
+            <h3 class="sB_session_title">フロントエンドとコンテンツ配信のミライーWebはどう変わるかー</h3>
+            <p class="sB_session_speakerCompany">株式会社chatbox</p>
+            <p class="sB_session_speakerName">後藤知宏</p></a></li>
+        <li class="sB_session"><a href="./session.html" class="sB_sessionLink">
+            <div class="sB_session_speakerImgBox"><img src="http://placehold.it/150x150" class="sB_session_sIB_speakerImg"></div>
+            <h3 class="sB_session_title">フロントエンドとコンテンツ配信のミライーWebはどう変わるかー</h3>
+            <p class="sB_session_speakerCompany">株式会社chatbox</p>
+            <p class="sB_session_speakerName">後藤知宏</p></a></li>
+        <li class="sB_session"><a href="./session.html" class="sB_sessionLink">
+            <div class="sB_session_speakerImgBox"><img src="http://placehold.it/150x150" class="sB_session_sIB_speakerImg"></div>
+            <h3 class="sB_session_title">フロントエンドとコンテンツ配信のミライーWebはどう変わるかー</h3>
+            <p class="sB_session_speakerCompany">株式会社chatbox</p>
+            <p class="sB_session_speakerName">後藤知宏</p></a></li>
+        <li class="sB_session"><a href="./session.html" class="sB_sessionLink">
+            <div class="sB_session_speakerImgBox"><img src="http://placehold.it/150x150" class="sB_session_sIB_speakerImg"></div>
+            <h3 class="sB_session_title">フロントエンドとコンテンツ配信のミライーWebはどう変わるかー</h3>
+            <p class="sB_session_speakerCompany">株式会社chatbox</p>
+            <p class="sB_session_speakerName">後藤知宏</p></a></li>
+        <li class="sB_session">
+          <div class="sB_session_speakerImgBox"><img src="http://placehold.it/150x150" class="sB_session_sIB_speakerImg--hidden"></div>
+          <h3 class="sB_session_title--andMore">and more...</h3>
+        </li>
+      </ul>
+      <div class="linkBtnBox--sessionDetailPage"><a href="./sessionDetail.html" class="lBB_linkBtn--sessionDetailPage">
+          <div class="linkBtn_innerBox">
+            <div class="lB_innerBox_circleMark--left"></div>
+            <p class="lB_innerBox_text">詳細を見る</p>
+            <div class="lB_innerBox_circleMark--right"></div>
+          </div></a></div>
+    </div>
+    <!--タイムテーブル-->
+    <div class="l-timeTable">
+      <div class="contentHeadingMark--navy"></div>
+      <h2 class="contentHeading--navy">タイムテーブル</h2>
+      <ul class="timeTableSheet">
+        <li class="timeTableSheet_box">
+          <div class="timeTableSheet_box_time">10:00</div>
+          <div class="timeTableSheet_box_content--opening">オープニング</div>
+        </li>
+        <li class="timeTableSheet_box">
+          <div class="timeTableSheet_box_time">10:15</div>
+          <div class="timeTableSheet_box_content--sessionA">session A</div>
+        </li>
+        <li class="timeTableSheet_box">
+          <div class="timeTableSheet_box_time">12:00</div>
+          <div class="timeTableSheet_box_content--lunchTime">昼休み</div>
+        </li>
+        <li class="timeTableSheet_box">
+          <div class="timeTableSheet_box_time">13:00</div>
+          <div class="timeTableSheet_box_content--sessionB">session B</div>
+        </li>
+        <li class="timeTableSheet_box">
+          <div class="timeTableSheet_box_time">15:00</div>
+          <div class="timeTableSheet_box_content--sessionC">session C</div>
+        </li>
+        <li class="timeTableSheet_box">
+          <div class="timeTableSheet_box_time">17:00</div>
+          <div class="timeTableSheet_box_content--LT">Lightning Talk</div>
+        </li>
+        <li class="timeTableSheet_box">
+          <div class="timeTableSheet_box_time">18:00</div>
+          <div class="timeTableSheet_box_content--closing">クロージング</div>
+        </li>
+      </ul>
+      <p class="timeTableAttention">※ 当日のタイムスケジュールは、企画および当日の諸事情により、予告なく変更となる場合があります。</p>
+    </div>
+    <!--アクセス-->
+    <div class="l-access"><iframe class="accessMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.043849285257!2d135.49718751539615!3d34.72928908042711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e43b1dbab3b1%3A0xbe6b3eaacbdb4771!2z44Ko44Og44Kq44O844OG44OD44Kv44K55paw5aSn6Ziq44OT44Or!5e0!3m2!1sja!2sjp!4v1474422578877" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="accessInfoBox">
+        <div class="contentHeadingMark--white"></div>
+        <h2 class="contentHeading--white">アクセス</h2>
+        <p class="accessInfo_address">〒532-0011 大阪市淀川区西中島5-12-12<br>エムオーテックス新大阪ビル</p>
+        <p class="accessInfo_station">
+          <i class="fa fa-subway" aria-hidden="true"></i>
+          JR新大阪駅
+        </p>
+        <p class="accessInfo_requiredTime">正面口より徒歩約7分</p>
+        <p class="accessInfo_station">
+          <i class="fa fa-subway" aria-hidden="true"></i>
+          地下鉄御堂筋線新大阪駅
+        </p>
+        <p class="accessInfo_requiredTime">7番出口より徒歩約5分</p>
+        <p class="accessInfo_station">
+          <i class="fa fa-subway" aria-hidden="true"></i>
+          地下鉄御堂筋線西中島南方駅
+        </p>
+        <p class="accessInfo_requiredTime">1番出口より徒歩約5分</p>
+        <div class="linkBtnBox--googleMap"><a href="https://goo.gl/maps/d6htXoQX1wB2" target="_blank" class="lBB_linkBtn--googleMap">
+            <div class="linkBtn_innerBox">
+              <div class="lB_innerBox_circleMark--left"></div>
+              <p class="lB_innerBox_text">Googlemapで開く</p>
+              <div class="lB_innerBox_circleMark--right"></div>
             </div></a></div>
       </div>
     </div>
-    <div id="sp-recruitArea"><a href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" class="recruitBtn speakerBtn">
-        <div class="innerBox">
-          <div class="circle circleLeft"></div>
-          <p>登壇者 募集</p>
-          <div class="circle circleRight"></div>
-        </div></a><a href="http://goo.gl/forms/QAGiQUlDO26rYp173" class="recruitBtn sponsorBtn">
-        <div class="innerBox">
-          <div class="circle circleLeft"></div>
-          <p>スポンサー 募集</p>
-          <div class="circle circleRight"></div>
-        </div></a></div>
-    <div id="footer">
-      <p class="title">laravel.osaka</p>
-      <div class="snsArea"><a href="http://laravel.connpass.com/" target="_blank" class="snsLink connpass">connpass</a>&nbsp;&nbsp;<a href="https://www.facebook.com/laravel.osaka" target="_blank" class="snsLink facebook">facebook</a></div>
-    </div><br><br><script>
+    <!--スポンサー一覧-->
+    <div class="l-sponsor">
+      <div class="contentHeadingMark--navy"></div>
+      <h2 class="contentHeading--navy">スポンサー</h2>
+      <!--ul.sponsorBox-->
+      <!--    li.sponsorBox_sponsorLogo スポンサーロゴ-->
+      <!--    li.sponsorBox_sponsorLogo スポンサーロゴ-->
+      <!--    li.sponsorBox_sponsorLogo スポンサーロゴ-->
+      <!--    li.sponsorBox_sponsorLogo スポンサーロゴ-->
+      <!--    li.sponsorBox_sponsorLogo スポンサーロゴ-->
+      <!--    li.sponsorBox_sponsorLogo スポンサーロゴ--><a href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank" class="lBB_linkBtn--recruitSponsor">
+        <div class="linkBtn_innerBox">
+          <div class="lB_innerBox_circleMark--left"></div>
+          <p class="lB_innerBox_text">スポンサー募集</p>
+          <div class="lB_innerBox_circleMark--right"></div>
+        </div></a>
+    </div>
+    <!--共通フッター-->
+    <div class="l-footer">
+      <p class="footer_laravelOsaka">Laravel.Osaka</p>
+      <ul class="footer_sns">
+        <li class="footer_sns--connpass">
+          <div class="footer_sns_circleMark"></div><a href="http://laravel.connpass.com/" target="_blank" class="footer_sns_text">connpass</a>
+        </li>
+        <li class="footer_sns--facebook">
+          <div class="footer_sns_circleMark"></div><a href="https://www.facebook.com/laravel.osaka" target="_blank" class="footer_sns_text">facebook</a>
+        </li>
+      </ul>
+    </div><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

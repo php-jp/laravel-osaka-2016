@@ -66,13 +66,14 @@ html(lang="ja")
     .l-aboutLaravelOsaka
       .contentHeadingMark--navy
       h2.contentHeading--navy Laravel Osaka 2016 とは
-      p.laravelOsakaOverview PHPアプリケーション・フレームワーク「Laravel」をテーマにした
+      p.laravelOsakaOverview
+        | PHPアプリケーション開発の現場で人気の高いフレームワーク「Laravel」
         br
-        |関西では初めてのイベントです。
+        | そんな「Laravel」をテーマに、1日 丸ごとLaravelのセッションイベントがスタートします。
         br
-        |Laravelを日常の業務でバリバリ使ってる猛者をはじめ、
+        |Laravelを日常の業務でバリバリ使ってる経験者も、
         br
-        |これからLaravel/PHPをはじめようとする人にも楽しめる内容盛りだくさん!!
+        |これからLaravel/PHPをはじめようとする人も、きっと楽しめる充実のセッション内容!!
         br
         |「Laravelに興味があるけど難しい・・・」
         br
@@ -85,13 +86,21 @@ html(lang="ja")
       .contentHeadingMark--white
       h2.contentHeading--white Speakers
       ul.sessionBox
-        li.sB_session
-          a(href="./session.html").sB_sessionLink
-            .sB_session_speakerImgBox
-              img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
-            h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-            p.sB_session_speakerCompany 株式会社chatbox
-            p.sB_session_speakerName 後藤知宏
+        each session in sessions
+          li.sB_session
+            a(href="./session.html").sB_sessionLink
+              .sB_session_speakerImgBox
+                img.sB_session_sIB_speakerImg(src="./profile/#{session.photo}")
+              h3.sB_session_title #{session.title}
+              p.sB_session_speakerCompany #{session.at}
+              p.sB_session_speakerName #{session.name}
+          li.sB_session
+            a(href="./session.html").sB_sessionLink
+              .sB_session_speakerImgBox
+                img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
+              h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
+              p.sB_session_speakerCompany 株式会社chatbox
+              p.sB_session_speakerName 後藤知宏
         li.sB_session
           a(href="./session.html").sB_sessionLink
             .sB_session_speakerImgBox
@@ -194,13 +203,18 @@ html(lang="ja")
     .l-sponsor
         .contentHeadingMark--navy
         h2.contentHeading--navy スポンサー
-        ul.sponsorBox
-            li.sponsorBox_sponsorLogo スポンサーロゴ
-            li.sponsorBox_sponsorLogo スポンサーロゴ
-            li.sponsorBox_sponsorLogo スポンサーロゴ
-            li.sponsorBox_sponsorLogo スポンサーロゴ
-            li.sponsorBox_sponsorLogo スポンサーロゴ
-            li.sponsorBox_sponsorLogo スポンサーロゴ
+        //ul.sponsorBox
+        //    li.sponsorBox_sponsorLogo スポンサーロゴ
+        //    li.sponsorBox_sponsorLogo スポンサーロゴ
+        //    li.sponsorBox_sponsorLogo スポンサーロゴ
+        //    li.sponsorBox_sponsorLogo スポンサーロゴ
+        //    li.sponsorBox_sponsorLogo スポンサーロゴ
+        //    li.sponsorBox_sponsorLogo スポンサーロゴ
+        a.lBB_linkBtn--recruitSponsor(href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank")
+          .linkBtn_innerBox
+            .lB_innerBox_circleMark--left
+            p.lB_innerBox_text スポンサー募集
+            .lB_innerBox_circleMark--right
 
     //共通フッター
     include ./_footer

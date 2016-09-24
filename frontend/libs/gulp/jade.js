@@ -20,7 +20,9 @@ class Jade{
 
     build(path,options){
         options = Object.assign({},{
-            locals:{},
+            locals:{
+                sessions: require("../../assets/data/sessions.js")
+            },
             pretty:true
         },options);
 
