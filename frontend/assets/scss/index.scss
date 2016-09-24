@@ -437,7 +437,7 @@
     padding-bottom: 3rem;
     background-size: 10% auto;
   }
-  .sponsorBox {
+  .sponsorBox { //まだスポンサー決まってないのでjadeはコメントアウトされてる
     text-align: center;
     .sponsorBox_sponsorLogo {
       display: inline-block;
@@ -448,6 +448,17 @@
       @include media {
         width: 70%;
         max-width: 18rem;
+      }
+    }
+  }
+  .linkBtnBox--recruitSponsor {
+    text-align: center;
+    padding-top: 2rem;
+    .lBB_linkBtn--recruitSponsor {
+      @include linkBtn;
+      .lB_innerBox_text { //ボタンwidthの調整
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
       }
     }
   }

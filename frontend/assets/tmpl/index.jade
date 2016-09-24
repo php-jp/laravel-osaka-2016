@@ -135,7 +135,7 @@ html(lang="ja")
           h3.sB_session_title--andMore and more...
 
       .linkBtnBox--sessionDetailPage
-        a.lBB_linkBtn--sessionDetailPage(href="./sessionDetail.html")
+        a.lBB_linkBtn--sessionDetailPage(href="./session.html")
           .linkBtn_innerBox
             .lB_innerBox_circleMark--left
             p.lB_innerBox_text 詳細を見る
@@ -169,6 +169,10 @@ html(lang="ja")
           .timeTableSheet_box_content--closing クロージング
       p.timeTableAttention ※ 当日のタイムスケジュールは、企画および当日の諸事情により、予告なく変更となる場合があります。
 
+      //ul
+      //  each session in sessions
+      //    li= session.title
+      //p #{testdatas[0].name}
 
     //アクセス
     .l-access
@@ -210,11 +214,12 @@ html(lang="ja")
         //    li.sponsorBox_sponsorLogo スポンサーロゴ
         //    li.sponsorBox_sponsorLogo スポンサーロゴ
         //    li.sponsorBox_sponsorLogo スポンサーロゴ
-        a.lBB_linkBtn--recruitSponsor(href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank")
-          .linkBtn_innerBox
-            .lB_innerBox_circleMark--left
-            p.lB_innerBox_text スポンサー募集
-            .lB_innerBox_circleMark--right
+        .linkBtnBox--recruitSponsor
+          a.lBB_linkBtn--recruitSponsor(href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank")
+            .linkBtn_innerBox
+              .lB_innerBox_circleMark--left
+              p.lB_innerBox_text スポンサー募集
+              .lB_innerBox_circleMark--right
 
     //共通フッター
     include ./_footer
