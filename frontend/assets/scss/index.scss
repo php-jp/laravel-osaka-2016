@@ -239,9 +239,10 @@
       }
       .sB_session_speakerCompany {
         top: 55%;
+        font-size: $fontSizeBase--pc * 0.8;
         @include media {
           top: 58%;
-          font-size: $fontSizeBase--sp * 0.9;
+          font-size: $fontSizeBase--sp * 0.7;
         }
       }
       .sB_session_speakerName {
