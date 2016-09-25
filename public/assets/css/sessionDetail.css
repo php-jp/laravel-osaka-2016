@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/*この辺はopacityで対応するのであとで削除*/
+/*ここから正式*/
+/*この辺はopacityで対応するのであとで削除*/
+/*ここから正式*/
+/*便利な関数*/
+/*◯と見出し*/
+.contentHeadingMark--white {
+  margin-left: auto;
+  margin-right: auto;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 0.9rem;
+  border: 6px solid rgba(255, 255, 255, 0.6); }
+  @media screen and (max-width: 800px) {
+    .contentHeadingMark--white {
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 0.8rem;
+      border: 5px solid rgba(255, 255, 255, 0.6); } }
+
+.contentHeadingMark--navy {
+  margin-left: auto;
+  margin-right: auto;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 0.9rem;
+  border: 6px solid rgba(40, 43, 96, 0.8); }
+  @media screen and (max-width: 800px) {
+    .contentHeadingMark--navy {
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 0.8rem;
+      border: 5px solid rgba(40, 43, 96, 0.8); } }
+
+.contentHeading--white {
+  color: white;
+  text-align: center; }
+  @media screen and (max-width: 800px) {
+    .contentHeading--white {
+      font-size: 16.8px; } }
+
+.contentHeading--navy {
+  color: #282b60;
+  text-align: center; }
+  @media screen and (max-width: 800px) {
+    .contentHeading--navy {
+      font-size: 16.8px; } }
+
+/*この辺はopacityで対応するのであとで削除*/
+/*ここから正式*/
+.l-footer {
+  background-color: #fb615c;
+  padding-top: 20px; }
+  .l-footer .footer_laravelOsaka,
+  .l-footer .footer_sns_text {
+    color: white; }
+  .l-footer .footer_laravelOsaka {
+    text-align: center; }
+  .l-footer .footer_sns {
+    text-align: center; }
+    .l-footer .footer_sns .footer_sns--connpass {
+      padding-right: 1rem; }
+      @media screen and (max-width: 800px) {
+        .l-footer .footer_sns .footer_sns--connpass {
+          padding-right: 0.5rem; } }
+    .l-footer .footer_sns .footer_sns--facebook {
+      padding-left: 1rem; }
+      @media screen and (max-width: 800px) {
+        .l-footer .footer_sns .footer_sns--facebook {
+          padding-left: 0.5rem; } }
+    .l-footer .footer_sns .footer_sns--connpass,
+    .l-footer .footer_sns .footer_sns--facebook {
+      display: inline-block;
+      height: 3rem; }
+    .l-footer .footer_sns .footer_sns_circleMark {
+      display: inline-block;
+      margin: 1rem 0.5rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 0.5rem;
+      border: 4px solid white; }
+    .l-footer .footer_sns .footer_sns_text {
+      vertical-align: top;
+      display: inline-block;
+      line-height: 3rem; }
+
+/*タグのデフォルトで邪魔なやつをリセット*/
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin: 0; }
+
+/*便利な関数*/
+body {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif; }
+
+/*もともとのやつを修正したら*に書き換え*/
+.l-header,
+.l-pageArea--sessionDetail {
+  font-size: 16px; }
+  @media screen and (max-width: 800px) {
+    .l-header,
+    .l-pageArea--sessionDetail {
+      font-size: 14px; } }
+
+.l-header {
+  background-image: url("../../img/bg-pt-footer.png");
+  background-size: 3% auto; }
+  .l-header .header_laravelIcon {
+    width: 2rem;
+    margin: 0.5rem 1rem; }
+    @media screen and (max-width: 800px) {
+      .l-header .header_laravelIcon {
+        width: 1.5rem;
+        margin: 0.5rem 0.5rem 0.5rem 1rem; } }
+  .l-header .header_laravelOsaka {
+    vertical-align: top;
+    font-size: 24px;
+    font-weight: normal;
+    color: #fb615c;
+    display: inline-block;
+    margin: 0.5rem 0; }
+    @media screen and (max-width: 800px) {
+      .l-header .header_laravelOsaka {
+        margin: 0.8rem 0 0.5rem 0;
+        font-size: 16.8px; } }
+
+.l-pageArea--sessionDetail {
+  /*タイトルの高さが変わったらどうなるか問題
+    中の文字の大きさを変えて高さ統一がいいかな？*/
+  background-color: rgba(251, 97, 92, 0.8);
+  padding-top: 4rem;
+  padding-bottom: 6rem; }
+  @media screen and (max-width: 800px) {
+    .l-pageArea--sessionDetail {
+      padding-top: 2rem; } }
+  .l-pageArea--sessionDetail .sessionDetail {
+    position: relative;
+    margin-top: 4rem; }
+    @media screen and (max-width: 800px) {
+      .l-pageArea--sessionDetail .sessionDetail {
+        margin-top: 3rem; } }
+    .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox--topParts {
+      margin-left: auto;
+      margin-right: auto;
+      height: 1.5rem;
+      width: 80VW;
+      max-width: 900px;
+      background-color: rgba(252, 245, 237, 0.8); }
+      @media screen and (max-width: 800px) {
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox--topParts {
+          width: 90VW;
+          height: 1rem; } }
+    .l-pageArea--sessionDetail .sessionDetail .sessionDetail_boxForTitleBoxCentering .sessionDetail_bFTBC_titleBox {
+      margin-left: auto;
+      margin-right: auto;
+      width: 85VW;
+      max-width: 920px;
+      background-color: #282b60;
+      padding: 3px; }
+      @media screen and (max-width: 800px) {
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_boxForTitleBoxCentering .sessionDetail_bFTBC_titleBox {
+          width: 95VW; } }
+      .l-pageArea--sessionDetail .sessionDetail .sessionDetail_boxForTitleBoxCentering .sessionDetail_bFTBC_titleBox .sD_bFTBC_titleBox_innerBox {
+        border: 2px solid rgba(255, 255, 255, 0.6); }
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_boxForTitleBoxCentering .sessionDetail_bFTBC_titleBox .sD_bFTBC_titleBox_innerBox .sD_bFTBC_tB_innerBox_title {
+          line-height: 1.6rem;
+          font-size: 19.2px;
+          height: 54px;
+          margin: 1rem 2rem;
+          color: white; }
+          @media screen and (max-width: 800px) {
+            .l-pageArea--sessionDetail .sessionDetail .sessionDetail_boxForTitleBoxCentering .sessionDetail_bFTBC_titleBox .sD_bFTBC_titleBox_innerBox .sD_bFTBC_tB_innerBox_title {
+              font-size: 14px;
+              margin: 1rem;
+              height: 65px;
+              line-height: 1.3rem; } }
+    .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox {
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 3rem;
+      width: 80VW;
+      max-width: 900px;
+      background-color: rgba(252, 245, 237, 0.8); }
+      @media screen and (max-width: 800px) {
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox {
+          width: 90VW;
+          padding-bottom: 3.5rem; } }
+      .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_overview {
+        line-height: 1.8rem;
+        padding: 1.8rem 2rem;
+        color: #282b60; }
+        @media screen and (max-width: 800px) {
+          .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_overview {
+            padding: 1.2rem;
+            line-height: 1.4rem; } }
+      .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_hr {
+        font-size: 11.2px;
+        text-align: center;
+        color: rgba(40, 43, 96, 0.6);
+        padding-top: 1rem;
+        padding-bottom: 3rem; }
+        @media screen and (max-width: 800px) {
+          .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_hr {
+            font-size: 9.8px;
+            padding-top: 0.5rem;
+            padding-bottom: 1.5rem; } }
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_hr .sD_contentBox_hr_part {
+          padding-left: 0.3rem;
+          padding-right: 0.3rem; }
+          @media screen and (max-width: 800px) {
+            .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_hr .sD_contentBox_hr_part {
+              padding-left: 0.2rem;
+              padding-right: 0.2rem; } }
+      .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 95%; }
+        @media screen and (max-width: 800px) {
+          .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox {
+            width: 98%; } }
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns {
+          width: 35%; }
+          .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_imageBox {
+            text-align: center; }
+            .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_imageBox .sD_cB_sB_iS_imageBox_image {
+              width: 80%;
+              height: 80%;
+              border-radius: 80%;
+              display: inline-block;
+              max-width: 160px;
+              width: 75%;
+              height: 75%;
+              border-radius: 75%; }
+          .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_snsBox {
+            text-align: center;
+            padding-top: 0.5rem; }
+            .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_snsBox .sD_cB_sB_iS_snsBox_sns {
+              display: inline-block;
+              margin: 0 0.5rem; }
+              @media screen and (max-width: 800px) {
+                .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_snsBox .sD_cB_sB_iS_snsBox_sns {
+                  margin: 0; } }
+              .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_snsBox .sD_cB_sB_iS_snsBox_sns .sD_cB_sB_iS_snsBox_sns--twitter,
+              .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_snsBox .sD_cB_sB_iS_snsBox_sns .sD_cB_sB_iS_snsBox_sns--facebook,
+              .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_snsBox .sD_cB_sB_iS_snsBox_sns .sD_cB_sB_iS_snsBox_sns--link {
+                display: inline-block;
+                background-color: rgba(255, 255, 255, 0.6);
+                text-align: center;
+                line-height: 2.4rem;
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 2.4rem;
+                color: #fb615c; }
+                @media screen and (max-width: 800px) {
+                  .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_snsBox .sD_cB_sB_iS_snsBox_sns .sD_cB_sB_iS_snsBox_sns--twitter,
+                  .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_snsBox .sD_cB_sB_iS_snsBox_sns .sD_cB_sB_iS_snsBox_sns--facebook,
+                  .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_imageSns .sD_cB_sB_imageSns_snsBox .sD_cB_sB_iS_snsBox_sns .sD_cB_sB_iS_snsBox_sns--link {
+                    font-size: 14px;
+                    line-height: 1.8rem;
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    border-radius: 1.8rem; } }
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_company,
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_name,
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_kana,
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_description {
+          color: #fb615c;
+          position: absolute;
+          left: 36%; }
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_company {
+          top: 0;
+          font-size: 17.6px; }
+          @media screen and (max-width: 800px) {
+            .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_company {
+              font-size: 14px; } }
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_name {
+          top: 18%;
+          font-weight: bold;
+          font-size: 17.6px; }
+          @media screen and (max-width: 800px) {
+            .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_name {
+              font-size: 14px; } }
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_kana {
+          top: 33%;
+          font-size: 12.8px; }
+        .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_description {
+          top: 51%;
+          line-height: 1.8rem;
+          padding-right: 4rem; }
+          @media screen and (max-width: 800px) {
+            .l-pageArea--sessionDetail .sessionDetail .sessionDetail_contentBox .sD_contentBox_speakerBox .sD_cB_speakerBox_description {
+              font-size: 11.2px;
+              padding-right: 0.5rem;
+              line-height: 1.1rem; } }
+  .l-pageArea--sessionDetail .linkBtnBox--topPage {
+    text-align: center;
+    padding-top: 5rem; }
+    .l-pageArea--sessionDetail .linkBtnBox--topPage .lBB_linkBtn--topPage {
+      /*
+  ボタンサイズ（横幅）が可変になってるので
+  各ボタンの.lB_innerBox_textのpadding-left/padding-right
+  を調整してだいたい同じサイズにする
+  */
+      display: inline-block;
+      background-color: #282b60;
+      padding: 3px; }
+      .l-pageArea--sessionDetail .linkBtnBox--topPage .lBB_linkBtn--topPage .linkBtn_innerBox {
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        height: 4rem; }
+        .l-pageArea--sessionDetail .linkBtnBox--topPage .lBB_linkBtn--topPage .linkBtn_innerBox .lB_innerBox_circleMark--left {
+          margin-left: 0.5rem; }
+        .l-pageArea--sessionDetail .linkBtnBox--topPage .lBB_linkBtn--topPage .linkBtn_innerBox .lB_innerBox_circleMark--right {
+          margin-right: 0.5rem; }
+        .l-pageArea--sessionDetail .linkBtnBox--topPage .lBB_linkBtn--topPage .linkBtn_innerBox .lB_innerBox_circleMark--left,
+        .l-pageArea--sessionDetail .linkBtnBox--topPage .lBB_linkBtn--topPage .linkBtn_innerBox .lB_innerBox_circleMark--right {
+          display: inline-block;
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 0.5rem;
+          border: 4px solid rgba(255, 255, 255, 0.4); }
+        .l-pageArea--sessionDetail .linkBtnBox--topPage .lBB_linkBtn--topPage .linkBtn_innerBox .lB_innerBox_text {
+          vertical-align: top;
+          display: inline-block;
+          color: white;
+          line-height: 4rem; }
+      .l-pageArea--sessionDetail .linkBtnBox--topPage .lBB_linkBtn--topPage .lB_innerBox_text {
+        padding-left: 2.1rem;
+        padding-right: 2.1rem; }
