@@ -527,7 +527,7 @@ p {
       height: auto; } }
   .l-access .accessMap {
     vertical-align: bottom;
-    width: 100VW;
+    width: 100%;
     height: 100%; }
     @media screen and (max-width: 800px) {
       .l-access .accessMap {
