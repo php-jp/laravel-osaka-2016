@@ -4,7 +4,7 @@ module.exports = [
         kana: "Matsuo Masaru",
         at: "株式会社イノベーター・ジャパン",
         link: "https://twitter.com/localdisk",
-        photo: "default.jpg",
+        photo: "matsuo.jpg",
         bio: "PHPとJavaが好きなエンジニア。Laravelに困ってそうな人がいたら答えるのが趣味。Laravel養成読本とLaravelリファレンスを書きました。",
         title: "Laravelにおける後悔しないためのアプリケーション設計",
         description: "これまでに「○○という処理を作りたいのだけどLaravelではどうするのが正しいのか？」という質問を多く受けました。\n本セッションではその疑問に答えるべく私がLaravelを使ったアプリケーションを作成する際に気をつけていること、心がけていることを発表したいと思います。\n",
