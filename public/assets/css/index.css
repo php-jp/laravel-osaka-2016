@@ -192,11 +192,13 @@ p {
         padding-bottom: 2rem;
         text-align: center; }
         .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSpeaker,
+        .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT,
         .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor {
           display: inline-block;
           background-color: #282b60;
           padding: 3px; }
           .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox,
+          .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox,
           .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor .linkBtn_innerBox {
             border: 2px solid rgba(255, 255, 255, 0.6);
             text-align: center;
@@ -204,13 +206,17 @@ p {
             padding-right: 0;
             height: 4rem; }
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_circleMark--left,
+            .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_circleMark--left,
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_circleMark--left {
               margin-left: 0.5rem; }
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_circleMark--right,
+            .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_circleMark--right,
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_circleMark--right {
               margin-right: 0.5rem; }
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_circleMark--left,
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_circleMark--right,
+            .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_circleMark--left,
+            .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_circleMark--right,
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_circleMark--left,
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_circleMark--right {
               display: inline-block;
@@ -221,6 +227,7 @@ p {
               border-radius: 0.5rem;
               border: 4px solid rgba(255, 255, 255, 0.4); }
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_text,
+            .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_text,
             .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_text {
               vertical-align: top;
               display: inline-block;
@@ -231,6 +238,11 @@ p {
           .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSpeaker .lB_innerBox_text {
             padding-left: 2.1rem;
             padding-right: 2.1rem; }
+        .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT {
+          margin-right: 0.5rem; }
+          .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT .lB_innerBox_text {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem; }
         .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor {
           margin-left: 0.5rem; }
           .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor .lB_innerBox_text {
@@ -251,11 +263,13 @@ p {
         min-width: 300px;
         text-align: center; }
         .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSpeaker,
+        .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT,
         .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor {
           display: inline-block;
           background-color: #282b60;
           padding: 3px; }
           .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox,
+          .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox,
           .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor .linkBtn_innerBox {
             border: 2px solid rgba(255, 255, 255, 0.6);
             text-align: center;
@@ -263,13 +277,17 @@ p {
             padding-right: 0;
             height: 4rem; }
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_circleMark--left,
+            .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_circleMark--left,
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_circleMark--left {
               margin-left: 0.5rem; }
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_circleMark--right,
+            .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_circleMark--right,
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_circleMark--right {
               margin-right: 0.5rem; }
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_circleMark--left,
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_circleMark--right,
+            .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_circleMark--left,
+            .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_circleMark--right,
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_circleMark--left,
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_circleMark--right {
               display: inline-block;
@@ -280,6 +298,7 @@ p {
               border-radius: 0.5rem;
               border: 4px solid rgba(255, 255, 255, 0.4); }
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSpeaker .linkBtn_innerBox .lB_innerBox_text,
+            .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT .linkBtn_innerBox .lB_innerBox_text,
             .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor .linkBtn_innerBox .lB_innerBox_text {
               vertical-align: top;
               display: inline-block;
@@ -290,6 +309,11 @@ p {
           .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSpeaker .lB_innerBox_text {
             padding-left: 2.1rem;
             padding-right: 2.1rem; }
+        .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT {
+          margin-bottom: 0.2rem; }
+          .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT .lB_innerBox_text {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem; }
         .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor {
           margin-top: 0.2rem; }
           .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor .lB_innerBox_text {
