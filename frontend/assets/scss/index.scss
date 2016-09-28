@@ -94,6 +94,7 @@
         padding-bottom: 2rem;
         text-align: center;
         .lBB_linkBtn--recruitSpeaker,
+        .lBB_linkBtn--recruitParticipantLT,
         .lBB_linkBtn--recruitSponsor {
           @include linkBtn;
         }
@@ -102,6 +103,13 @@
           .lB_innerBox_text { //ボタンwidthの調整
             padding-left: 2.1rem;
             padding-right: 2.1rem;
+          }
+        }
+        .lBB_linkBtn--recruitParticipantLT {
+          margin-right: 0.5rem;
+          .lB_innerBox_text { //ボタンwidthの調整
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
           }
         }
         .lBB_linkBtn--recruitSponsor {
@@ -131,6 +139,7 @@
       min-width: 300px;
       text-align: center;
       .lBB_linkBtn--recruitSpeaker,
+      .lBB_linkBtn--recruitParticipantLT,
       .lBB_linkBtn--recruitSponsor {
         @include linkBtn;
       }
@@ -139,6 +148,13 @@
         .lB_innerBox_text { //ボタンwidthの調整
           padding-left: 2.1rem;
           padding-right: 2.1rem;
+        }
+      }
+      .lBB_linkBtn--recruitParticipantLT {
+        margin-bottom: 0.2rem;
+        .lB_innerBox_text { //ボタンwidthの調整
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
         }
       }
       .lBB_linkBtn--recruitSponsor {

@@ -38,10 +38,15 @@ html(lang="ja")
 
           // 800px以下：display:none。.cover_borderBoxの中
           .linkBtnBox--recruitSpeakerSponsor--pc
-            a.lBB_linkBtn--recruitSpeaker(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank")
+            //a.lBB_linkBtn--recruitSpeaker(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank")
+            //  .linkBtn_innerBox
+            //    .lB_innerBox_circleMark--left
+            //    p.lB_innerBox_text 登壇者募集
+            //    .lB_innerBox_circleMark--right
+            a.lBB_linkBtn--recruitParticipantLT(href="http://laravel.connpass.com/event/41141/" target="_blank")
               .linkBtn_innerBox
                 .lB_innerBox_circleMark--left
-                p.lB_innerBox_text 登壇者募集
+                p.lB_innerBox_text 一般参加・LT募集
                 .lB_innerBox_circleMark--right
             a.lBB_linkBtn--recruitSponsor(href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank")
               .linkBtn_innerBox
@@ -51,16 +56,21 @@ html(lang="ja")
 
       // 800px以下：display:block。.cover_borderBoxの外
       .linkBtnBox--recruitSpeakerSponsor--sp
-        a.lBB_linkBtn--recruitSpeaker(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank")
+        //a.lBB_linkBtn--recruitSpeaker(href="http://goo.gl/forms/Sov0kYwiWbYNUvWR2" target="_blank")
+        //  .linkBtn_innerBox
+        //    .lB_innerBox_circleMark--left
+        //    p.lB_innerBox_text 登壇者募集
+        //    .lB_innerBox_circleMark--right
+        a.lBB_linkBtn--recruitParticipantLT(href="http://laravel.connpass.com/event/41141/" target="_blank")
           .linkBtn_innerBox
             .lB_innerBox_circleMark--left
-            p.lB_innerBox_text 登壇者募集
+            p.lB_innerBox_text 一般参加・LT募集
             .lB_innerBox_circleMark--right
         a.lBB_linkBtn--recruitSponsor(href="http://goo.gl/forms/QAGiQUlDO26rYp173" target="_blank")
-          .linkBtn_innerBox
-            .lB_innerBox_circleMark--left
-            p.lB_innerBox_text スポンサー募集
-            .lB_innerBox_circleMark--right
+            .linkBtn_innerBox
+              .lB_innerBox_circleMark--left
+              p.lB_innerBox_text スポンサー募集
+              .lB_innerBox_circleMark--right
 
     //laravel.osakaについて
     .l-aboutLaravelOsaka
