@@ -255,9 +255,10 @@
       }
       .sB_session_speakerCompany {
         top: 55%;
+        font-size: $fontSizeBase--pc * 0.8;
         @include media {
           top: 58%;
-          font-size: $fontSizeBase--sp * 0.9;
+          font-size: $fontSizeBase--sp * 0.7;
         }
       }
       .sB_session_speakerName {
@@ -376,7 +377,7 @@
   }
   .accessMap {
     vertical-align: bottom;
-    width: 100VW;
+    width: 100%;
     height: 100%;
     @include media {
       height: 50VW;

@@ -6,7 +6,7 @@ html(lang="ja")
     title laravel.osaka
     link(rel="icon" type="image/png" href="./img/favicon.ico")
     script(type='text/javascript')
-    link(rel='stylesheet' href='./assets/css/index.css')
+    link(rel='stylesheet' href='./assets/css/index.css?v1')
     link(rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css")
     link(rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
     meta(property="og:title", content="laravel.osaka 2016")
@@ -98,58 +98,20 @@ html(lang="ja")
       ul.sessionBox
         each session in sessions
           li.sB_session
-            a(href="./session.html").sB_sessionLink
+            //a(href="./session.html").sB_sessionLink
+            a.sB_sessionLink
               .sB_session_speakerImgBox
                 img.sB_session_sIB_speakerImg(src="./profile/#{session.photo}")
               h3.sB_session_title #{session.title}
               p.sB_session_speakerCompany #{session.at}
               p.sB_session_speakerName #{session.name}
-          li.sB_session
-            a(href="./session.html").sB_sessionLink
-              .sB_session_speakerImgBox
-                img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
-              h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-              p.sB_session_speakerCompany 株式会社chatbox
-              p.sB_session_speakerName 後藤知宏
-        li.sB_session
-          a(href="./session.html").sB_sessionLink
-            .sB_session_speakerImgBox
-              img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
-            h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-            p.sB_session_speakerCompany 株式会社chatbox
-            p.sB_session_speakerName 後藤知宏
-        li.sB_session
-          a(href="./session.html").sB_sessionLink
-            .sB_session_speakerImgBox
-              img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
-            h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-            p.sB_session_speakerCompany 株式会社chatbox
-            p.sB_session_speakerName 後藤知宏
-        li.sB_session
-          a(href="./session.html").sB_sessionLink
-            .sB_session_speakerImgBox
-              img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
-            h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-            p.sB_session_speakerCompany 株式会社chatbox
-            p.sB_session_speakerName 後藤知宏
-        li.sB_session
-          a(href="./session.html").sB_sessionLink
-            .sB_session_speakerImgBox
-              img.sB_session_sIB_speakerImg(src="http://placehold.it/150x150")
-            h3.sB_session_title フロントエンドとコンテンツ配信のミライーWebはどう変わるかー
-            p.sB_session_speakerCompany 株式会社chatbox
-            p.sB_session_speakerName 後藤知宏
-        li.sB_session
-          .sB_session_speakerImgBox
-            img.sB_session_sIB_speakerImg--hidden(src="http://placehold.it/150x150")
-          h3.sB_session_title--andMore and more...
 
-      .linkBtnBox--sessionDetailPage
-        a.lBB_linkBtn--sessionDetailPage(href="./session.html")
-          .linkBtn_innerBox
-            .lB_innerBox_circleMark--left
-            p.lB_innerBox_text 詳細を見る
-            .lB_innerBox_circleMark--right
+      //.linkBtnBox--sessionDetailPage
+      //  a.lBB_linkBtn--sessionDetailPage(href="./session.html")
+      //    .linkBtn_innerBox
+      //      .lB_innerBox_circleMark--left
+      //      p.lB_innerBox_text 詳細を見る
+      //      .lB_innerBox_circleMark--right
 
     //タイムテーブル
     .l-timeTable
