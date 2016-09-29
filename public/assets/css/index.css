@@ -241,8 +241,8 @@ p {
         .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT {
           margin-right: 0.5rem; }
           .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitParticipantLT .lB_innerBox_text {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem; }
+            padding-left: 0.1rem;
+            padding-right: 0.1rem; }
         .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor {
           margin-left: 0.5rem; }
           .l-cover .cover_borderBox .cv_borderBox_contentBox .linkBtnBox--recruitSpeakerSponsor--pc .lBB_linkBtn--recruitSponsor .lB_innerBox_text {
@@ -312,8 +312,8 @@ p {
         .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT {
           margin-bottom: 0.2rem; }
           .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitParticipantLT .lB_innerBox_text {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem; }
+            padding-left: 0.375rem;
+            padding-right: 0.375rem; }
         .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor {
           margin-top: 0.2rem; }
           .l-cover .linkBtnBox--recruitSpeakerSponsor--sp .lBB_linkBtn--recruitSponsor .lB_innerBox_text {
