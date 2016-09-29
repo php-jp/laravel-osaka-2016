@@ -455,16 +455,41 @@
     background-size: 10% auto;
   }
   .sponsorBox { //まだスポンサー決まってないのでjadeはコメントアウトされてる
+    display: block;
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    .sponsorBox_sponsorLogo {
+    width: 80%;
+    max-width: 850px;
+    @include media {
+      padding-top: 1rem;
+      width: 100%;
+    }
+    .sponsorBox_sponsorLogoli {
       display: inline-block;
-      background-color: white;
-      margin: 2rem;
-      width: 20rem;
-      height: 10rem;
+      width: 43%;
+      vertical-align: top;
       @include media {
-        width: 70%;
-        max-width: 18rem;
+        width: 100%;
+      }
+      .sponsorLink {
+        display: inline-block;
+        background-color: white;
+        width: 17rem;
+        height: 9rem;
+        margin-bottom: 1.5rem;
+        //スポンサーが揃ったら
+        //カイトさんの変態的CSSを参考に
+        //大きさを揃える
+        .sponsorBox_sponsorLogo--MOTEX {
+          height: 55%;
+          padding-top: 13%;
+        }
+        .sponsorBox_sponsorLogo--chatbox {
+          height: 60%;
+          padding-top: 10%;
+        }
       }
     }
   }
