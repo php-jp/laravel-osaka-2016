@@ -19,6 +19,23 @@ module.exports = [
         title: "Laravel5.3 の新機能",
     },
     {
+        name: "増永 玲",
+        link: "http://www.msng.info/",
+        photo: "msng.png",
+        bio: "ウェブのサービスを作って運営するなどしています。",
+        title: "Laravel でアクセスコントロールを簡単に実装する話",
+        description:"Laravel の Authorization 機能で「誰が」「何に対して」「何を」やっていいかを簡単に実装できるようになりました。ユーザーに権限を与えたり禁止したりするコードを実際に書きながら、アクセスコントロールをより楽ちんに行う方法を考えてみます。",
+    },
+    {
+        name: " 髙橋 慎一",
+        at: "cloudpack",
+        link: "https://cloudpack.jp",
+        photo: "tkp.jpg",
+        bio: " 東京でクラウドやR&Dみたいなことやってます。",
+        title: "Vue.js + Lumenで学ぶWebAPI駆動プロダクト",
+        description:"Vue.js on S3 & Lumen on EC2 & ユーザ認証 on CognitoUserPoolを使った、「疎結合」で「コード量を少なく」なおかつ「保守性の高い」プロダクトを作った経験と、その際の思考・技術的選択、メリット・デメリットについてお話します。",
+    },
+    {
         name: "後藤知宏",
         kana: "Goto Tomohiro",
         at: "株式会社 chatbox",
