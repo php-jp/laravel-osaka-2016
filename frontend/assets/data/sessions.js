@@ -27,13 +27,21 @@ module.exports = [
         description:"Laravel の Authorization 機能で「誰が」「何に対して」「何を」やっていいかを簡単に実装できるようになりました。ユーザーに権限を与えたり禁止したりするコードを実際に書きながら、アクセスコントロールをより楽ちんに行う方法を考えてみます。",
     },
     {
-        name: " 髙橋 慎一",
+        name: " 高橋 慎一",
         at: "cloudpack",
         link: "https://cloudpack.jp",
         photo: "tkp.jpg",
         bio: " 東京でクラウドやR&Dみたいなことやってます。",
         title: "Vue.js + Lumenで学ぶWebAPI駆動プロダクト",
         description:"Vue.js on S3 & Lumen on EC2 & ユーザ認証 on CognitoUserPoolを使った、「疎結合」で「コード量を少なく」なおかつ「保守性の高い」プロダクトを作った経験と、その際の思考・技術的選択、メリット・デメリットについてお話します。",
+    },
+    {
+        name: " 大村 創太郎",
+        link: "http://omoon.org/",
+        photo: "omoon.jpeg",
+        bio: " PHPを使ったWEBアプリケーションの開発・運用をやっています。",
+        title: "Laravel でアプリケーションを開発し Heroku で公開するまでの一部始終",
+        description:"Laravel 標準の開発環境「Homestead（あるいは Valet）」を使って小さなアプリケーションを開発し、それを Heroku で公開するまでの一部始終をデモを交えながらお話します。",
     },
     {
         name: "後藤知宏",
