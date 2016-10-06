@@ -46,7 +46,7 @@ html(lang="ja")
                         .sD_cB_speakerBox_imageSns
                             .sD_cB_sB_imageSns_imageBox
                                 img.sD_cB_sB_iS_imageBox_image(src="./profile/#{session.photo}")
-                            ul.sD_cB_sB_imageSns_snsBox
+                            //ul.sD_cB_sB_imageSns_snsBox
                                 li.sD_cB_sB_iS_snsBox_sns
                                     a.sD_cB_sB_iS_snsBox_sns--twitter(href="") <i class="fa fa-twitter" aria-hidden="true"></i>
                                 li.sD_cB_sB_iS_snsBox_sns
@@ -55,8 +55,10 @@ html(lang="ja")
                                     a.sD_cB_sB_iS_snsBox_sns--link(href="") <i class="fa fa-link" aria-hidden="true"></i>
                         //.sD_cB_speakerBox_companyNameDescription
                         p.sD_cB_speakerBox_company #{session.at}
-                        p.sD_cB_speakerBox_name #{session.name}
-                        p.sD_cB_speakerBox_kana #{session.kana}
+                        .sD_cB_speakerBox_nameLinkBox
+                            p.sD_cB_speakerBox_name #{session.name}
+                            a.sD_cB_speakerBox_link(href="") <i class="fa fa-link" aria-hidden="true"></i>
+                        //p.sD_cB_speakerBox_kana #{session.kana}
                         p.sD_cB_speakerBox_description #{session.bio}
             //section.sessionDetail
             //    .sessionDetail_contentBox--topParts
