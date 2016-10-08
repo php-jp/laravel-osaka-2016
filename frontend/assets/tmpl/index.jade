@@ -101,7 +101,8 @@ html(lang="ja")
             //a(href="./session.html").sB_sessionLink
             a.sB_sessionLink
               .sB_session_speakerImgBox
-                img.sB_session_sIB_speakerImg(src="./profile/#{session.photo}")
+                if session.photo
+                  img.sB_session_sIB_speakerImg(src="./profile/#{session.photo}")
               h3.sB_session_title #{session.title}
               p.sB_session_speakerCompany #{session.at}
               p.sB_session_speakerName #{session.name}
