@@ -7,6 +7,7 @@ module.exports = [
         photo: "shono.jpg",
         bio: "Laravelを使ったり、フロントエンドを触ったりしているエンジニアです。",
         title: "Laravel5.3 の新機能",
+        description: "Laravel5.3 で新しくなったLaravel の新機能を簡単に紹介します。"
     },
     {
         name: "松尾 大",
@@ -59,7 +60,8 @@ module.exports = [
         link: "http://chatbox-inc.com/page/member/mikakane/",
         photo: "mikakane.jpg",
         bio: "関西フロントエンドUGとかやってます。",
-        title: "Laravel アプリケーションとテスト"
+        title: "Laravel アプリケーションとテスト",
+        description: "Laravel アプリケーションをつかって開発フローにテストを取り入れるための第一歩と、テストの考え方を紹介します。"
     },
     {
     }
