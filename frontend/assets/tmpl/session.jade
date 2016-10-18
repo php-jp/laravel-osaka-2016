@@ -29,37 +29,37 @@ html(lang="ja")
         h2.contentHeading--white セッション一覧
 
         each session in sessions
-
-            section.sessionDetail
-                .sessionDetail_contentBox--topParts
-                .sessionDetail_boxForTitleBoxCentering
-                    .sessionDetail_bFTBC_titleBox
-                        .sD_bFTBC_titleBox_innerBox
-                            h3.sD_bFTBC_tB_innerBox_title #{session.title}
-                .sessionDetail_contentBox
-                    p.sD_contentBox_overview #{session.description}
-                    .sD_contentBox_hr
-                        <i class="sD_contentBox_hr_part fa fa-circle" aria-hidden="true"></i>
-                        |<i class="sD_contentBox_hr_part fa fa-circle" aria-hidden="true"></i>
-                        |<i class="sD_contentBox_hr_part fa fa-circle" aria-hidden="true"></i>
-                    .sD_contentBox_speakerBox
-                        .sD_cB_speakerBox_imageSns
-                            .sD_cB_sB_imageSns_imageBox
-                                img.sD_cB_sB_iS_imageBox_image(src="./profile/#{session.photo}")
-                            //ul.sD_cB_sB_imageSns_snsBox
-                                li.sD_cB_sB_iS_snsBox_sns
-                                    a.sD_cB_sB_iS_snsBox_sns--twitter(href="") <i class="fa fa-twitter" aria-hidden="true"></i>
-                                li.sD_cB_sB_iS_snsBox_sns
-                                    a.sD_cB_sB_iS_snsBox_sns--facebook(href="") <i class="fa fa-facebook" aria-hidden="true"></i>
-                                li.sD_cB_sB_iS_snsBox_sns
-                                    a.sD_cB_sB_iS_snsBox_sns--link(href="") <i class="fa fa-link" aria-hidden="true"></i>
-                        //.sD_cB_speakerBox_companyNameDescription
-                        p.sD_cB_speakerBox_company #{session.at}
-                        .sD_cB_speakerBox_nameLinkBox
-                            p.sD_cB_speakerBox_name #{session.name}
-                            a.sD_cB_speakerBox_link(href="") <i class="fa fa-link" aria-hidden="true"></i>
-                        //p.sD_cB_speakerBox_kana #{session.kana}
-                        p.sD_cB_speakerBox_description #{session.bio}
+            if session.name
+                section.sessionDetail
+                    .sessionDetail_contentBox--topParts
+                    .sessionDetail_boxForTitleBoxCentering
+                        .sessionDetail_bFTBC_titleBox
+                            .sD_bFTBC_titleBox_innerBox
+                                h3.sD_bFTBC_tB_innerBox_title #{session.title}
+                    .sessionDetail_contentBox
+                        p.sD_contentBox_overview #{session.description}
+                        .sD_contentBox_hr
+                            <i class="sD_contentBox_hr_part fa fa-circle" aria-hidden="true"></i>
+                            |<i class="sD_contentBox_hr_part fa fa-circle" aria-hidden="true"></i>
+                            |<i class="sD_contentBox_hr_part fa fa-circle" aria-hidden="true"></i>
+                        .sD_contentBox_speakerBox
+                            .sD_cB_speakerBox_imageSns
+                                .sD_cB_sB_imageSns_imageBox
+                                    img.sD_cB_sB_iS_imageBox_image(src="./profile/#{session.photo}")
+                                //ul.sD_cB_sB_imageSns_snsBox
+                                    li.sD_cB_sB_iS_snsBox_sns
+                                        a.sD_cB_sB_iS_snsBox_sns--twitter(href="") <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    li.sD_cB_sB_iS_snsBox_sns
+                                        a.sD_cB_sB_iS_snsBox_sns--facebook(href="") <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    li.sD_cB_sB_iS_snsBox_sns
+                                        a.sD_cB_sB_iS_snsBox_sns--link(href="") <i class="fa fa-link" aria-hidden="true"></i>
+                            //.sD_cB_speakerBox_companyNameDescription
+                            p.sD_cB_speakerBox_company #{session.at}
+                            .sD_cB_speakerBox_nameLinkBox
+                                p.sD_cB_speakerBox_name #{session.name}
+                                a.sD_cB_speakerBox_link(href=session.link target="_blank") <i class="fa fa-link" aria-hidden="true"></i>
+                            //p.sD_cB_speakerBox_kana #{session.kana}
+                            p.sD_cB_speakerBox_description #{session.bio}
             //section.sessionDetail
             //    .sessionDetail_contentBox--topParts
             //    .sessionDetail_boxForTitleBoxCentering
