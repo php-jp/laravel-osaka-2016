@@ -486,9 +486,14 @@
           height: 55%;
           padding-top: 13%;
         }
-        .sponsorBox_sponsorLogo--chatbox {
+        .sponsorBox_sponsorLogo--chatbox,
+        .sponsorBox_sponsorLogo--unzip {
           height: 60%;
           padding-top: 10%;
+        }
+        .sponsorBox_sponsorLogo--zeals {
+          height: 40%;
+          padding-top: 15%;
         }
       }
     }
