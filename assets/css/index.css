@@ -676,9 +676,13 @@ p {
         .l-sponsor .sponsorBox .sponsorBox_sponsorLogoli .sponsorLink .sponsorBox_sponsorLogo--MOTEX {
           height: 55%;
           padding-top: 13%; }
-        .l-sponsor .sponsorBox .sponsorBox_sponsorLogoli .sponsorLink .sponsorBox_sponsorLogo--chatbox {
+        .l-sponsor .sponsorBox .sponsorBox_sponsorLogoli .sponsorLink .sponsorBox_sponsorLogo--chatbox,
+        .l-sponsor .sponsorBox .sponsorBox_sponsorLogoli .sponsorLink .sponsorBox_sponsorLogo--unzip {
           height: 60%;
           padding-top: 10%; }
+        .l-sponsor .sponsorBox .sponsorBox_sponsorLogoli .sponsorLink .sponsorBox_sponsorLogo--zeals {
+          height: 40%;
+          padding-top: 15%; }
   .l-sponsor .linkBtnBox--recruitSponsor {
     text-align: center;
     padding-top: 2rem; }
