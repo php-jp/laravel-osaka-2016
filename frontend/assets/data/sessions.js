@@ -10,6 +10,15 @@ module.exports = [
         description: "Laravel5.3 で新しくなったLaravel の新機能を簡単に紹介します。"
     },
     {
+        name: "Hinaloe",
+        kana: "Hinaloe",
+        link: "https://hinaloe.net/",
+        photo: "hina.png",
+        bio: "渋谷のスタートアップで働いている京都の学生、Laravelは初心者",
+        title: "Passportではじめる OAuth2",
+        description: "Laravel 5.3 で公式パッケージとして登場した Passport (まだ日本語資料がほとんど無い)。使う理由や使い方、そしてカスタマイズについてまで薄く広く紹介します。"
+    },
+    {
         name: "松尾 大",
         kana: "Matsuo Masaru",
         at: "株式会社イノベーター・ジャパン",
