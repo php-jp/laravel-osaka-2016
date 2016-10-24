@@ -302,11 +302,14 @@
     }
     .timeTableSheet_box {
       background-color: white;
+      display: table;
       height: 5rem;
+      width: 100%;
       margin-bottom: 0.5rem;
       @include media {
         height: 3.5rem;
       }
+
       .timeTableSheet_box_time,
       .timeTableSheet_box_content--opening,
       .timeTableSheet_box_content--sessionA,
@@ -315,12 +318,31 @@
       .timeTableSheet_box_content--sessionC,
       .timeTableSheet_box_content--LT,
       .timeTableSheet_box_content--closing {
-        display: inline-block;
-        line-height: 5rem;
+        display: table-cell;
+        //line-height: 5rem;
+        height: 100%;
+        vertical-align: middle;
+        overflow: hidden;
         @include media {
-          line-height: 3.5rem;
+          //line-height: 3.5rem;
         }
       }
+      //幅の設定
+      .timeTableSheet_box_time {
+        width: 20%;
+        text-align: center;
+      }
+
+      .timeTableSheet_box_content--sessionA,
+      .timeTableSheet_box_content--sessionB,
+      .timeTableSheet_box_content--sessionC {
+        width: 50vw;
+        line-height: 1rem;
+        @include media {
+          line-height: 1rem;
+        }
+      }
+
       .timeTableSheet_box_content--opening,
       .timeTableSheet_box_content--sessionA,
       .timeTableSheet_box_content--lunchTime,
@@ -346,12 +368,12 @@
         background-color: $themaPink;
         color: white;
         font-size: $fontSizeBase--pc * 1.2;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        //padding-left: 2rem;
+        //padding-right: 2rem;
         @include media {
           font-size: $fontSizeBase--sp * 1.2;
-          padding-left: 1rem;
-          padding-right: 1rem;
+          //padding-left: 1rem;
+          //padding-right: 1rem;
         }
       }
     }
