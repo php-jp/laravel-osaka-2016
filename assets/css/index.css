@@ -469,7 +469,9 @@ p {
         padding-top: 1rem; } }
     .l-timeTable .timeTableSheet .timeTableSheet_box {
       background-color: white;
+      display: table;
       height: 5rem;
+      width: 100%;
       margin-bottom: 0.5rem; }
       @media screen and (max-width: 800px) {
         .l-timeTable .timeTableSheet .timeTableSheet_box {
@@ -482,18 +484,23 @@ p {
       .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--sessionC,
       .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--LT,
       .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--closing {
-        display: inline-block;
-        line-height: 5rem; }
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+        overflow: hidden; }
+      .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_time {
+        width: 20%;
+        text-align: center; }
+      .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--sessionA,
+      .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--sessionB,
+      .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--sessionC {
+        width: 50vw;
+        line-height: 1rem; }
         @media screen and (max-width: 800px) {
-          .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_time,
-          .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--opening,
           .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--sessionA,
-          .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--lunchTime,
           .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--sessionB,
-          .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--sessionC,
-          .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--LT,
-          .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--closing {
-            line-height: 3.5rem; } }
+          .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--sessionC {
+            line-height: 1rem; } }
       .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--opening,
       .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--sessionA,
       .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_content--lunchTime,
@@ -522,14 +529,10 @@ p {
       .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_time {
         background-color: #fb615c;
         color: white;
-        font-size: 19.2px;
-        padding-left: 2rem;
-        padding-right: 2rem; }
+        font-size: 19.2px; }
         @media screen and (max-width: 800px) {
           .l-timeTable .timeTableSheet .timeTableSheet_box .timeTableSheet_box_time {
-            font-size: 16.8px;
-            padding-left: 1rem;
-            padding-right: 1rem; } }
+            font-size: 16.8px; } }
   .l-timeTable .timeTableAttention {
     margin-left: auto;
     margin-right: auto;
